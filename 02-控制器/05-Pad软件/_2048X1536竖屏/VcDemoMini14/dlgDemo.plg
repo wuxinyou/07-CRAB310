@@ -1,0 +1,70 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: dlgDemo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP232.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/dlgDemo.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini14\ChannelWnd.cpp"
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini14\CodecSettingFrm.cpp"
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini14\dlgDemo.cpp"
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini14\dlgDemoDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP232.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP233.tmp" with contents
+[
+winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"..\output\dlgDemo.pdb" /debug /machine:I386 /out:"../AppExe/CRAB.exe" /pdbtype:sept 
+".\Debug\BCMenu.obj"
+".\Debug\BtnST.obj"
+".\Debug\ChannelWnd.obj"
+".\Debug\CodecSettingFrm.obj"
+".\Debug\cyQueue.obj"
+".\Debug\DeviceControl.obj"
+".\Debug\dlgDemo.obj"
+".\Debug\dlgDemoDlg.obj"
+".\Debug\MyProgress.obj"
+".\Debug\PictureEx.obj"
+".\Debug\SerialPort.obj"
+".\Debug\StdAfx.obj"
+".\dlgDemo.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP233.tmp"
+<h3>Output Window</h3>
+Compiling...
+dlgDemoDlg.cpp
+Generating Code...
+Skipping... (no relevant changes detected)
+ChannelWnd.cpp
+CodecSettingFrm.cpp
+dlgDemo.cpp
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP234.tmp" with contents
+[
+/nologo /o"Debug/dlgDemo.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\BCMenu.sbr"
+".\Debug\BtnST.sbr"
+".\Debug\ChannelWnd.sbr"
+".\Debug\CodecSettingFrm.sbr"
+".\Debug\cyQueue.sbr"
+".\Debug\DeviceControl.sbr"
+".\Debug\dlgDemo.sbr"
+".\Debug\dlgDemoDlg.sbr"
+".\Debug\MyProgress.sbr"
+".\Debug\PictureEx.sbr"
+".\Debug\SerialPort.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP234.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+CRAB.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

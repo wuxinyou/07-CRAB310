@@ -1,0 +1,7 @@
+Added Component: Designator=R6(R0603-S)
+Added Pin To Net: NetName=3.3V Pin=R6-1
+Added Pin To Net: NetName=NetR6_2 Pin=R6-2
+Added Pin To Net: NetName=NetR6_2 Pin=U3-33
+Added Pin To Net: NetName=NetR6_2 Pin=U21-16
+Added Net: Name=NetR6_2
+Added Member To Class: ClassName=海关全向本体电路板V3_电平转换 Member=Component R6 2K

@@ -1,0 +1,5 @@
+--cpu Cortex-M3 "..\output\main.o" "..\output\process.o" "..\output\protocol.o" "..\output\datachain.o" "..\output\ioout.o" "..\output\key.o" "..\output\serialport.o" "..\output\timer.o" "..\output\stm32_systick.o" "..\output\stm32_adc.o" "..\output\stm32_priority.o" "..\output\stm32_gpio.o" "..\output\misc.o" "..\output\stm32f10x_adc.o" "..\output\stm32f10x_conf.o" "..\output\stm32f10x_dma.o" "..\output\stm32f10x_gpio.o" "..\output\stm32f10x_rcc.o" "..\output\stm32f10x_tim.o" "..\output\stm32f10x_usart.o" "..\output\system_stm32f10x.o" "..\output\startup_stm32f10x_md.o" 
+--library_type=microlib --strict --scatter "..\Output\Project.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\OBJ\Project.map" -o ..\Output\Project.hex

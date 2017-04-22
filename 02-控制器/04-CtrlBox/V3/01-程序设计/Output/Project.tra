@@ -1,0 +1,41 @@
+*** Creating Trace Output File '..\Output\Project.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"..\output\main.o"'
+### List of Objects: adding '"..\output\process.o"'
+### List of Objects: adding '"..\output\protocol.o"'
+### List of Objects: adding '"..\output\datachain.o"'
+### List of Objects: adding '"..\output\ioout.o"'
+### List of Objects: adding '"..\output\key.o"'
+### List of Objects: adding '"..\output\serialport.o"'
+### List of Objects: adding '"..\output\timer.o"'
+### List of Objects: adding '"..\output\stm32_systick.o"'
+### List of Objects: adding '"..\output\stm32_adc.o"'
+### List of Objects: adding '"..\output\stm32_priority.o"'
+### List of Objects: adding '"..\output\stm32_gpio.o"'
+### List of Objects: adding '"..\output\misc.o"'
+### List of Objects: adding '"..\output\stm32f10x_adc.o"'
+### List of Objects: adding '"..\output\stm32f10x_conf.o"'
+### List of Objects: adding '"..\output\stm32f10x_dma.o"'
+### List of Objects: adding '"..\output\stm32f10x_gpio.o"'
+### List of Objects: adding '"..\output\stm32f10x_rcc.o"'
+### List of Objects: adding '"..\output\stm32f10x_tim.o"'
+### List of Objects: adding '"..\output\stm32f10x_usart.o"'
+### List of Objects: adding '"..\output\system_stm32f10x.o"'
+### List of Objects: adding '"..\output\startup_stm32f10x_md.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "..\output\main.o" "..\output\process.o" "..\output\protocol.o" "..\output\datachain.o" "..\output\ioout.o" "..\output\key.o" "..\output\serialport.o" "..\output\timer.o" "..\output\stm32_systick.o" "..\output\stm32_adc.o" "..\output\stm32_priority.o" "..\output\stm32_gpio.o" "..\output\misc.o" "..\output\stm32f10x_adc.o" "..\output\stm32f10x_conf.o" "..\output\stm32f10x_dma.o" "..\output\stm32f10x_gpio.o" "..\output\stm32f10x_rcc.o" "..\output\stm32f10x_tim.o" "..\output\stm32f10x_usart.o" "..\output\system_stm32f10x.o" "..\output\startup_stm32f10x_md.o" 
+--library_type=microlib --strict --scatter "..\Output\Project.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\OBJ\Project.map" -o ..\Output\Project.hex### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '..\Output\Project.hex'
+### ADS-LD Command File: '..\Output\Project.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '..\Output\Project.lnp', Handle=0x00000314
+### Writing '.lnp' file
+### ADS-LD Command file '..\Output\Project.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

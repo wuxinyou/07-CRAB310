@@ -1,0 +1,37 @@
+------------------------------------------------------------
+Single Pin Net Report for 海关全向控制器主控板电路V3_主控芯片.SchDoc
+-- 2016/11/10
+-- 11:07:14
+------------------------------------------------------------
+  //2 joystick
+Net AD1 has only one pin (Pin U5-15)
+Net AD2 has only one pin (Pin U5-16)
+Net AD3 has only one pin (Pin U5-12)
+Net AD4 has only one pin (Pin U5-13)
+//2 key board
+Net AD_KEY1 has only one pin (Pin U5-11)
+Net AD_KEY2 has only one pin (Pin U5-17)
+   //CtrlBox power
+Net AD_POW has only one pin (Pin U5-14)
+
+Net AD_POWKEY has only one pin (Pin U5-10)
+
+Net CTRPOW has only one pin (Pin U5-19)
+Net CTRVBT has only one pin (Pin U5-20)
+
+Net PADTEST has only one pin (Pin U5-18)
+
+Net POWLEDB1 has only one pin (Pin U5-39)
+Net POWLEDB2 has only one pin (Pin U5-41)
+Net POWLEDB3 has only one pin (Pin U5-43)
+Net POWLEDB4 has only one pin (Pin U5-46)
+Net POWLEDR1 has only one pin (Pin U5-38)
+Net POWLEDR2 has only one pin (Pin U5-40)
+Net POWLEDR3 has only one pin (Pin U5-42)
+Net POWLEDR4 has only one pin (Pin U5-45)
+
+Net SETBT has only one pin (Pin U5-33)
+Net SETDIG has only one pin (Pin U5-25)
+Net VEDIO_CH1 has only one pin (Pin U5-26)
+Net VEDIO_CH2 has only one pin (Pin U5-27)
+Net VEDIO_CH3 has only one pin (Pin U5-28)

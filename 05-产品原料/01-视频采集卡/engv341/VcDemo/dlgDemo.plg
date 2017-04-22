@@ -1,0 +1,35 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: dlgDemo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP37D.tmp" with contents
+[
+DXMediaCap.lib /nologo /subsystem:windows /incremental:yes /pdb:"..\output\dlgDemo.pdb" /debug /machine:I386 /out:"../AppExe/VCDemo.exe" /pdbtype:sept 
+".\Debug\ChannelWnd.obj"
+".\Debug\CodecSettingFrm.obj"
+".\Debug\ColorPropertyDlg.obj"
+".\Debug\CVideoDenoiseFrm.obj"
+".\Debug\DeviceControl.obj"
+".\Debug\DIGITALZOOM.obj"
+".\Debug\dlgDemo.obj"
+".\Debug\dlgDemoDlg.obj"
+".\Debug\OSDSetting.obj"
+".\Debug\StdAfx.obj"
+".\dlgDemo.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP37D.tmp"
+<h3>Output Window</h3>
+Linking...
+LINK : LNK6004: ../AppExe/VCDemo.exe not found or not built by the last incremental link; performing full link
+
+
+
+<h3>Results</h3>
+VCDemo.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

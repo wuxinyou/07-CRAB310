@@ -1,0 +1,9 @@
+Added Component: Designator=R12(R1206-S)
+Added Component: Designator=R13(R1206-S)
+Added Pin To Net: NetName=SW+ Pin=R12-1
+Added Pin To Net: NetName=NetQ9_3 Pin=R12-2
+Added Pin To Net: NetName=GND_P Pin=R13-1
+Added Pin To Net: NetName=SW- Pin=R13-2
+Added Member To Class: ClassName=海关全向本体电路板V3_2路电池接入 Member=Component R12 0R
+Added Member To Class: ClassName=海关全向本体电路板V3_2路电池接入 Member=Component R13 0R
+Added Member To Class: ClassName=海关全向本体电路板V3_通信隔离 Member=Component U2 ISO7241CDWR

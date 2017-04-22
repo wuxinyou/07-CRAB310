@@ -1,0 +1,19 @@
+Removed Member From Class: ClassName=海关全向本体电路板V3_电源管理 Member=TP3
+Change Component Comment : Designator=U4 Old Comment=KHHD002A5B New Comment=KHHD002A5B41Z
+Added Component: Designator=C17(C0603-S)
+Added Component: Designator=C25(C0603-S)
+Added Component: Designator=C50(C0603-S)
+Added Component: Designator=C51(C0603-S)
+Added Pin To Net: NetName=GND_A Pin=C17-1
+Added Pin To Net: NetName=+5V_A Pin=C17-2
+Added Pin To Net: NetName=GND_A Pin=C25-1
+Added Pin To Net: NetName=+12V_A Pin=C25-2
+Added Pin To Net: NetName=GND_A Pin=C50-1
+Added Pin To Net: NetName=+5V_A Pin=C50-2
+Added Pin To Net: NetName=GND_A Pin=C51-1
+Added Pin To Net: NetName=+5V_A Pin=C51-2
+Added Pin To Net: NetName=GND_A Pin=J22-7
+Added Member To Class: ClassName=海关全向本体电路板V3_电源管理 Member=Component C17 0.1uF
+Added Member To Class: ClassName=海关全向本体电路板V3_电源管理 Member=Component C25 0.1uF
+Added Member To Class: ClassName=海关全向本体电路板V3_电源管理 Member=Component C50 100pF
+Added Member To Class: ClassName=海关全向本体电路板V3_电源管理 Member=Component C51 10uF

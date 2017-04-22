@@ -1,0 +1,546 @@
+# Microsoft Developer Studio Project File - Name="dlgDemo" - Package Owner=<4>
+# Microsoft Developer Studio Generated Build File, Format Version 6.00
+# ** DO NOT EDIT **
+
+# TARGTYPE "Win32 (x86) Application" 0x0101
+
+CFG=dlgDemo - Win32 Debug
+!MESSAGE This is not a valid makefile. To build this project using NMAKE,
+!MESSAGE use the Export Makefile command and run
+!MESSAGE 
+!MESSAGE NMAKE /f "dlgDemo.mak".
+!MESSAGE 
+!MESSAGE You can specify a configuration when running NMAKE
+!MESSAGE by defining the macro CFG on the command line. For example:
+!MESSAGE 
+!MESSAGE NMAKE /f "dlgDemo.mak" CFG="dlgDemo - Win32 Debug"
+!MESSAGE 
+!MESSAGE Possible choices for configuration are:
+!MESSAGE 
+!MESSAGE "dlgDemo - Win32 Release" (based on "Win32 (x86) Application")
+!MESSAGE "dlgDemo - Win32 Debug" (based on "Win32 (x86) Application")
+!MESSAGE 
+
+# Begin Project
+# PROP AllowPerConfigDependencies 0
+# PROP Scc_ProjName ""
+# PROP Scc_LocalPath ""
+CPP=cl.exe
+MTL=midl.exe
+RSC=rc.exe
+
+!IF  "$(CFG)" == "dlgDemo - Win32 Release"
+
+# PROP BASE Use_MFC 6
+# PROP BASE Use_Debug_Libraries 0
+# PROP BASE Output_Dir "Release"
+# PROP BASE Intermediate_Dir "Release"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 5
+# PROP Use_Debug_Libraries 0
+# PROP Output_Dir "Release"
+# PROP Intermediate_Dir "Release"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Yu"stdafx.h" /FD /c
+# ADD CPP /nologo /MT /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /FR /Yu"stdafx.h" /FD /c
+# ADD BASE MTL /nologo /D "NDEBUG" /mktyplib203 /win32
+# ADD MTL /nologo /D "NDEBUG" /mktyplib203 /win32
+# ADD BASE RSC /l 0x804 /d "NDEBUG" /d "_AFXDLL"
+# ADD RSC /l 0x804 /fo"dlgDemo.res" /d "NDEBUG"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo /o"..\output\dlgDemo.bsc"
+LINK32=link.exe
+# ADD BASE LINK32 /nologo /subsystem:windows /machine:I386
+# ADD LINK32 winmm.lib lib/libvlc.lib lib/libvlccore.lib opengl32.lib glu32.lib glaux.lib dinput8.lib dxguid.lib /nologo /subsystem:windows /pdb:"..\output\dlgDemo.pdb" /machine:I386 /out:"release/CRAB.exe"
+# SUBTRACT LINK32 /pdb:none
+
+!ELSEIF  "$(CFG)" == "dlgDemo - Win32 Debug"
+
+# PROP BASE Use_MFC 6
+# PROP BASE Use_Debug_Libraries 1
+# PROP BASE Output_Dir "Debug"
+# PROP BASE Intermediate_Dir "Debug"
+# PROP BASE Target_Dir ""
+# PROP Use_MFC 5
+# PROP Use_Debug_Libraries 1
+# PROP Output_Dir "../Debug"
+# PROP Intermediate_Dir "../Debug"
+# PROP Ignore_Export_Lib 0
+# PROP Target_Dir ""
+# ADD BASE CPP /nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Yu"stdafx.h" /FD /GZ /c
+# ADD CPP /nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR /Yu"stdafx.h" /FD /GZ /c
+# ADD BASE MTL /nologo /D "_DEBUG" /mktyplib203 /win32
+# ADD MTL /nologo /D "_DEBUG" /mktyplib203 /win32
+# ADD BASE RSC /l 0x804 /d "_DEBUG" /d "_AFXDLL"
+# ADD RSC /l 0x804 /fo"../output/dlgDemo.res" /d "_DEBUG"
+BSC32=bscmake.exe
+# ADD BASE BSC32 /nologo
+# ADD BSC32 /nologo
+LINK32=link.exe
+# ADD BASE LINK32 /nologo /subsystem:windows /debug /machine:I386 /pdbtype:sept
+# ADD LINK32 winmm.lib lib/libvlc.lib lib/libvlccore.lib opengl32.lib glu32.lib glaux.lib dinput8.lib dxguid.lib QCAP.lib /nologo /subsystem:windows /pdb:"..\output\dlgDemo.pdb" /debug /machine:I386 /out:"../AppExe/CRAB.exe" /pdbtype:sept
+# SUBTRACT LINK32 /pdb:none
+
+!ENDIF 
+
+# Begin Target
+
+# Name "dlgDemo - Win32 Release"
+# Name "dlgDemo - Win32 Debug"
+# Begin Group "Source Files"
+
+# PROP Default_Filter "cpp;c;cxx;rc;def;r;odl;idl;hpj;bat"
+# Begin Source File
+
+SOURCE=.\3DS.CPP
+# End Source File
+# Begin Source File
+
+SOURCE=.\3DSShow.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\BCMenu.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\BtnST.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\ChannelWindow.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\ChannelWnd.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\CodecSettingFrm.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\Compass.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\cyQueue.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\DeviceControl.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\dlgDemo.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\dlgDemoDlg.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\MyProgress.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\MySplashScreen.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\PictureEx.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\PicViewerDlg.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\SerialPort.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\StaticBtn.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\StdAfx.cpp
+# ADD CPP /Yc"stdafx.h"
+# End Source File
+# Begin Source File
+
+SOURCE=.\stdint.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\TxtViewerDlg.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\VideoPlayerDlg.cpp
+# End Source File
+# Begin Source File
+
+SOURCE=.\vlc.h
+# End Source File
+# End Group
+# Begin Group "Header Files"
+
+# PROP Default_Filter "h;hpp;hxx;hm;inl"
+# Begin Source File
+
+SOURCE=.\3DSShow.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\BCMenu.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\BtnST.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\ChannelWindow.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\ChannelWnd.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\CodecSettingFrm.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\Compass.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\cyQueue.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\datastru.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\DeviceControl.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\dlgDemo.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\dlgDemoDlg.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\DXMediaCap.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\vlc\libvlc.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\MyProgress.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\MySplashScreen.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\PictureEx.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\PicViewerDlg.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\QCAP.H
+# End Source File
+# Begin Source File
+
+SOURCE=.\Resource.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\SerialPort.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\StaticBtn.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\StdAfx.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\TxtViewerDlg.h
+# End Source File
+# Begin Source File
+
+SOURCE=.\VideoPlayerDlg.h
+# End Source File
+# End Group
+# Begin Group "Resource Files"
+
+# PROP Default_Filter "ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe"
+# Begin Source File
+
+SOURCE=.\res\aotuMode.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\backGround.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\bitmap1.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\bluetooth_off.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\bluetooth_on.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\channel1.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\channel2.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\channel3.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\channel4.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\channelSwitch1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\channelSwitch2.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\charge.gif
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\charge2_718.gif
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\compass.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=".\res\CRAB Logo800_01.bmp"
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\CRAB.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\CRAB1.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\CRAB1280x800.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\dlgDemo.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\dlgDemo.rc2
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\exitBtn1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\exitBtn2.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\haiguan.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\LoadDevices.gif
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\LoadDevicesGif.gif
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\manuMode.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\nextBtn1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\nextBtn2.ico
+# End Source File
+# Begin Source File
+
+SOURCE=".\res\OD Log720x576.bmp"
+# End Source File
+# Begin Source File
+
+SOURCE=".\res\OD Log768x480.bmp"
+# End Source File
+# Begin Source File
+
+SOURCE=".\res\OD Log768x550.bmp"
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\off.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\on.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\openBtn1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\picViewerBtn1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\picViewerBtn2.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\power80.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\prevBtn1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\prevBtn2.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\recordBtn1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\recordBtn2.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\settingBtn1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\settingBtn2.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\snap.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\snapBtn1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\snapBtn2.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\TxtViewerBtn1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\v1.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\v2.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\v3.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\v4.bmp
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\videoPlayerBtn1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\videoPlayerBtn2.ico
+# End Source File
+# Begin Source File
+
+SOURCE=.\res\videoViewerBtn1.ico
+# End Source File
+# Begin Source File
+
+SOURCE=".\res\电量指示立体02_100.bmp"
+# End Source File
+# Begin Source File
+
+SOURCE=".\res\电量指示立体02_20.bmp"
+# End Source File
+# Begin Source File
+
+SOURCE=".\res\电量指示立体02_40.bmp"
+# End Source File
+# Begin Source File
+
+SOURCE=".\res\电量指示立体02_60.bmp"
+# End Source File
+# Begin Source File
+
+SOURCE=".\res\电量指示立体02_80.bmp"
+# End Source File
+# End Group
+# Begin Source File
+
+SOURCE=.\res\CRAB.png
+# End Source File
+# Begin Source File
+
+SOURCE=.\dlgDemo.rc
+# End Source File
+# Begin Source File
+
+SOURCE=.\ReadMe.txt
+# End Source File
+# End Target
+# End Project

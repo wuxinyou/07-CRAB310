@@ -1,0 +1,15 @@
+E:\new sdkv33\engv333\AppExe\CsharpDemo.exe
+E:\new sdkv33\engv333\AppExe\CsharpDemo.pdb
+E:\new sdkv33\engv333\CsharpDemo\VideoTestDemo\obj\Release\ResolveAssemblyReference.cache
+E:\new sdkv33\engv333\CsharpDemo\VideoTestDemo\obj\Release\VideoTestDemo.AboutBox1.resources
+E:\new sdkv33\engv333\CsharpDemo\VideoTestDemo\obj\Release\VideoTestDemo.CodecSetFrm.resources
+E:\new sdkv33\engv333\CsharpDemo\VideoTestDemo\obj\Release\VideoTestDemo.ColorSetting.resources
+E:\new sdkv33\engv333\CsharpDemo\VideoTestDemo\obj\Release\VideoTestDemo.DenoiseSetting.resources
+E:\new sdkv33\engv333\CsharpDemo\VideoTestDemo\obj\Release\VideoTestDemo.Form1.resources
+E:\new sdkv33\engv333\CsharpDemo\VideoTestDemo\obj\Release\VideoTestDemo.FrmDigitalZoom.resources
+E:\new sdkv33\engv333\CsharpDemo\VideoTestDemo\obj\Release\VideoTestDemo.OsdSetting.resources
+E:\new sdkv33\engv333\CsharpDemo\VideoTestDemo\obj\Release\VideoTestDemo.Properties.Resources.resources
+E:\new sdkv33\engv333\CsharpDemo\VideoTestDemo\obj\Release\GenerateResource-ResGen.read.1.tlog
+E:\new sdkv33\engv333\CsharpDemo\VideoTestDemo\obj\Release\GenerateResource-ResGen.write.1.tlog
+E:\new sdkv33\engv333\CsharpDemo\VideoTestDemo\obj\Release\CsharpDemo.exe
+E:\new sdkv33\engv333\CsharpDemo\VideoTestDemo\obj\Release\CsharpDemo.pdb

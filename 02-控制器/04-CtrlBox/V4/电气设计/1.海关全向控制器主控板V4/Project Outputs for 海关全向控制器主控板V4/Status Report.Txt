@@ -1,0 +1,10 @@
+Output: Report Single Pin Nets
+Type  : SinglePinNetReporter
+From  : Variant [[No Variations]] of Project [海关全向控制器主控板V4.PrjPcb]
+   Generated File[海关全向控制器主控板电路V4_主控芯片.REP]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 11:01:28 On 2016/11/10

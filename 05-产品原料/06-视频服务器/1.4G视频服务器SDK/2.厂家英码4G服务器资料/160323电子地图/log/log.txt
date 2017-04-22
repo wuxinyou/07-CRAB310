@@ -1,0 +1,69 @@
+2016-06-07 13:53:20,296 [1] DEBUG - =========软件启动=========
+2016-06-07 13:53:31,412 [1] DEBUG - 版本号:V1.0.1.3 
+2016-06-07 13:53:32,766 [1] DEBUG - 初始化数据库连接,连接串:Max Pool Size=512;Database='myeye';Server='emax.vicp.cc';Port=3306;User Id='zpy';Password='myeyeplatform';charset='utf8';
+2016-06-07 13:53:33,125 [1] DEBUG - 初始化XMSDK
+2016-06-07 13:53:33,404 [1] DEBUG - 初始化设备连接
+2016-06-07 13:53:34,003 [1] DEBUG - 初始化报警消息扫描
+2016-06-07 13:53:34,656 [21] DEBUG - 0 无 
+2016-06-07 13:53:34,657 [21] DEBUG - 连接短信设备失败[3,9600,-1]
+2016-06-07 13:53:39,681 [21] DEBUG - 0 无 
+2016-06-07 13:53:44,708 [21] DEBUG - 0 无 
+2016-06-07 13:53:49,680 [10] ERROR - 调用Api:http://emax.vicp.cc:9088/api/Login?token=&data={"Username":"emax","Password":"000000","DevId":null,"LoginType":0,"ClientType":1}&source=错误
+System.Net.WebException: 基础连接已经关闭: 发送时发生错误。 ---> System.IO.IOException: 无法将数据写入传输连接: 在一个非套接字上尝试了一个操作。。 ---> System.Net.Sockets.SocketException: 在一个非套接字上尝试了一个操作。
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.PooledStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.ConnectStream.WriteHeaders(Boolean async)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 DataMonitorMap.WebApiService.DoWebRequest(String url)
+2016-06-07 13:53:49,734 [21] DEBUG - 0 无 
+2016-06-07 13:53:49,952 [10] ERROR - 调用Api:http://emax.vicp.cc:9088/api/Login?token=&data={"Username":"emax","Password":"000000","DevId":null,"LoginType":1,"ClientType":1}&source=错误
+System.Net.WebException: 基础连接已经关闭: 发送时发生错误。 ---> System.IO.IOException: 无法将数据写入传输连接: 在一个非套接字上尝试了一个操作。。 ---> System.Net.Sockets.SocketException: 在一个非套接字上尝试了一个操作。
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.PooledStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.ConnectStream.WriteHeaders(Boolean async)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 DataMonitorMap.WebApiService.DoWebRequest(String url)
+2016-06-07 13:53:54,866 [21] DEBUG - 0 无 
+2016-06-07 13:53:59,889 [21] DEBUG - 0 无 
+2016-06-07 13:54:04,916 [21] DEBUG - 0 无 
+2016-06-07 13:54:09,933 [21] DEBUG - 0 无 
+2016-06-07 13:54:14,963 [21] DEBUG - 0 无 
+2016-06-07 13:54:19,984 [21] DEBUG - 0 无 
+2016-06-07 13:54:25,008 [21] DEBUG - 0 无 
+2016-06-07 13:54:30,036 [21] DEBUG - 0 无 
+2016-06-07 13:54:33,634 [12] ERROR - 调用Api:http://emax.vicp.cc:9088/api/Login?token=&data={"Username":"emax","Password":"000000","DevId":null,"LoginType":0,"ClientType":1}&source=错误
+System.Net.WebException: 基础连接已经关闭: 发送时发生错误。 ---> System.IO.IOException: 无法将数据写入传输连接: 在一个非套接字上尝试了一个操作。。 ---> System.Net.Sockets.SocketException: 在一个非套接字上尝试了一个操作。
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.PooledStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.ConnectStream.WriteHeaders(Boolean async)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 DataMonitorMap.WebApiService.DoWebRequest(String url)
+2016-06-07 13:54:33,743 [12] ERROR - 调用Api:http://emax.vicp.cc:9088/api/Login?token=&data={"Username":"emax","Password":"000000","DevId":null,"LoginType":1,"ClientType":1}&source=错误
+System.Net.WebException: 基础连接已经关闭: 发送时发生错误。 ---> System.IO.IOException: 无法将数据写入传输连接: 在一个非套接字上尝试了一个操作。。 ---> System.Net.Sockets.SocketException: 在一个非套接字上尝试了一个操作。
+   在 System.Net.Sockets.Socket.Send(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.Sockets.NetworkStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.PooledStream.Write(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.ConnectStream.WriteHeaders(Boolean async)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 DataMonitorMap.WebApiService.DoWebRequest(String url)
+2016-06-07 13:54:35,061 [21] DEBUG - 0 无 
+2016-06-07 13:54:39,991 [1] DEBUG - 连接线程退出
+2016-06-07 13:54:39,993 [1] DEBUG - 更新时间线程退出
+2016-06-07 13:54:39,993 [1] DEBUG - 扫描报警消息线程退出
+2016-06-07 13:54:39,994 [6] DEBUG - 释放XMSDK资源
+2016-06-07 13:54:40,397 [1] DEBUG - =========软件关闭=========

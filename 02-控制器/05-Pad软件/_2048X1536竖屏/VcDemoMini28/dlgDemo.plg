@@ -1,0 +1,108 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: dlgDemo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"dlgDemo.res" /d "_DEBUG" "E:\CYDL\01-全向机器人\CRAB\VcDemoMini28\dlgDemo.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD9.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/dlgDemo.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini28\BCMenu.cpp"
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini28\BtnST.cpp"
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini28\ChannelWnd.cpp"
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini28\CodecSettingFrm.cpp"
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini28\cyQueue.cpp"
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini28\DeviceControl.cpp"
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini28\dlgDemo.cpp"
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini28\dlgDemoDlg.cpp"
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini28\MyProgress.cpp"
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini28\PictureEx.cpp"
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini28\PicViewerDlg.cpp"
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini28\SerialPort.cpp"
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini28\TxtViewerDlg.cpp"
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini28\VideoPlayerDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPD9.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDA.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/dlgDemo.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini28\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDA.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDB.tmp" with contents
+[
+winmm.lib lib/libvlc.lib lib/libvlccore.lib /nologo /subsystem:windows /incremental:yes /pdb:"..\output\dlgDemo.pdb" /debug /machine:I386 /out:"Debug/CRAB.exe" /pdbtype:sept 
+".\Debug\BCMenu.obj"
+".\Debug\BtnST.obj"
+".\Debug\ChannelWnd.obj"
+".\Debug\CodecSettingFrm.obj"
+".\Debug\cyQueue.obj"
+".\Debug\DeviceControl.obj"
+".\Debug\dlgDemo.obj"
+".\Debug\dlgDemoDlg.obj"
+".\Debug\MyProgress.obj"
+".\Debug\PictureEx.obj"
+".\Debug\PicViewerDlg.obj"
+".\Debug\SerialPort.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TxtViewerDlg.obj"
+".\Debug\VideoPlayerDlg.obj"
+".\dlgDemo.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDB.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+BCMenu.cpp
+BtnST.cpp
+ChannelWnd.cpp
+CodecSettingFrm.cpp
+cyQueue.cpp
+DeviceControl.cpp
+dlgDemo.cpp
+dlgDemoDlg.cpp
+MyProgress.cpp
+PictureEx.cpp
+PicViewerDlg.cpp
+SerialPort.cpp
+E:\CYDL\01-全向机器人\CRAB\VcDemoMini28\SerialPort.cpp(521) : warning C4018: '!=' : signed/unsigned mismatch
+TxtViewerDlg.cpp
+VideoPlayerDlg.cpp
+E:\CYDL\01-全向机器人\CRAB\VcDemoMini28\VideoPlayerDlg.cpp(280) : warning C4244: 'initializing' : conversion from '__int64' to 'int', possible loss of data
+E:\CYDL\01-全向机器人\CRAB\VcDemoMini28\VideoPlayerDlg.cpp(314) : warning C4244: '=' : conversion from 'double' to '__int64', possible loss of data
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDD.tmp" with contents
+[
+/nologo /o"Debug/dlgDemo.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\BCMenu.sbr"
+".\Debug\BtnST.sbr"
+".\Debug\ChannelWnd.sbr"
+".\Debug\CodecSettingFrm.sbr"
+".\Debug\cyQueue.sbr"
+".\Debug\DeviceControl.sbr"
+".\Debug\dlgDemo.sbr"
+".\Debug\dlgDemoDlg.sbr"
+".\Debug\MyProgress.sbr"
+".\Debug\PictureEx.sbr"
+".\Debug\PicViewerDlg.sbr"
+".\Debug\SerialPort.sbr"
+".\Debug\TxtViewerDlg.sbr"
+".\Debug\VideoPlayerDlg.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPDD.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+CRAB.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

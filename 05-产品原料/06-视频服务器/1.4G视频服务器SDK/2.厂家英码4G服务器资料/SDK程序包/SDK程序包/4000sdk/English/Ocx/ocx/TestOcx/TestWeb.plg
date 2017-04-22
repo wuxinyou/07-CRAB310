@@ -1,0 +1,54 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TestWeb - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/TestWeb.res" /d "NDEBUG" /d "_AFXDLL" "E:\CNS\Trunk\webDevelop\TestOcx\TestWeb.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP299.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/TestWeb.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\CNS\Trunk\webDevelop\TestOcx\PTZCtrl.cpp"
+"E:\CNS\Trunk\webDevelop\TestOcx\TestWeb.cpp"
+"E:\CNS\Trunk\webDevelop\TestOcx\TestWebDlg.cpp"
+"E:\CNS\Trunk\webDevelop\TestOcx\webctrl1.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP299.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP29A.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/TestWeb.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\CNS\Trunk\webDevelop\TestOcx\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP29A.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP29B.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/TestWeb.pdb" /machine:I386 /out:"E:\job\Trunk\webDevelop\bin\TestWeb.exe" 
+.\Release\PTZCtrl.obj
+.\Release\StdAfx.obj
+.\Release\TestWeb.obj
+.\Release\TestWebDlg.obj
+.\Release\webctrl1.obj
+.\Release\TestWeb.res
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP29B.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+PTZCtrl.cpp
+TestWeb.cpp
+TestWebDlg.cpp
+webctrl1.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+TestWeb.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

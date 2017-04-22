@@ -1,0 +1,301 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\dlgDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAM            ICON    DISCARDABLE     "res\\haiguan.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 dlgDemo"
+FONT 9, "宋体"
+BEGIN
+    ICON            128,IDC_STATIC,11,17,20,20
+    LTEXT           "dlgDemo 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2011",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DLGDEMO_DIALOG DIALOGEX 0, 0, 565, 433
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "dlgDemo"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_ST_DISPLAY,"Static",SS_BLACKFRAME,7,7,459,411
+    PUSHBUTTON      "StartRecord",IDC_BT_RECORD,485,219,62,22
+    PUSHBUTTON      "Snap",IDC_BUTTON_SNAP,485,111,62,22
+    PUSHBUTTON      "Exit",IDC_BUTTON_EXIT,483,396,54,22
+    PUSHBUTTON      "CodecSetting",IDC_BUTTON_CODEC,485,192,62,22
+    PUSHBUTTON      "PauseRec",IDC_BUTTON_PAUSEREC,485,246,62,22
+END
+
+IDD_CODECSETTINGFRM_DIALOG DIALOG DISCARDABLE  0, 0, 291, 268
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,112,230,50,14
+    LTEXT           "VideoCodec",IDC_STATIC,19,22,48,16
+    LTEXT           "AudioCodec",IDC_STATIC,20,55,50,16
+    COMBOBOX        IDC_COMBO_VIDEOCODEC,75,23,183,97,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Enum the system codec information",IDC_STATIC,13,7,261,
+                    72
+    GROUPBOX        "Video Codec",IDC_STATIC,15,89,259,55
+    CONTROL         "H264 Codec",IDC_RADIO_H264,"Button",BS_AUTORADIOBUTTON,
+                    198,106,57,23
+    CONTROL         "XVID Codec",IDC_RADIO_XVID,"Button",BS_AUTORADIOBUTTON,
+                    21,105,59,23
+    CONTROL         "DIVX5 Codec",IDC_RADIO_DIVX,"Button",BS_AUTORADIOBUTTON,
+                    107,105,57,23
+    COMBOBOX        IDC_COMBO_AUDIOCODEC,75,53,183,97,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "save path setting",IDC_STATIC,16,151,259,66
+    LTEXT           "Picture save path:",IDC_STATIC,23,169,77,18
+    LTEXT           "Video save path:",IDC_STATIC,23,192,67,16
+    EDITTEXT        IDC_EDIT_SNAPDIR,110,165,116,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAP_DIR_EDIT,110,191,112,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "Brower",IDC_BUTTON_BROWSE_SNAPDIR,233,163,34,16
+    PUSHBUTTON      "Brower",IDC_BUTTON_BROWSE_RECDIR,233,188,34,16
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,4,1,0
+ PRODUCTVERSION 3,4,1,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x9L
+#else
+ FILEFLAGS 0x8L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "ShenZhen ZhongAn Vision\0"
+            VALUE "FileDescription", "dlgDemo Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "3, 4, 1, 0\0"
+            VALUE "InternalName", "dlgDemo\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2013\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "dlgDemo.EXE\0"
+            VALUE "PrivateBuild", "Tony yu 67505494@qq.com\0"
+            VALUE "ProductName", "dlgDemo 应用程序\0"
+            VALUE "ProductVersion", "3, 4, 1, 2\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DLGDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 557
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 418
+    END
+
+    IDD_CODECSETTINGFRM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 261
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "VideoSize"
+    BEGIN
+        MENUITEM "768*576",                     ID_SIZE_768
+        MENUITEM "D1",                          ID_SIZE_D1
+        MENUITEM "CIF",                         ID_SIZE_CIF
+    END
+    POPUP "VideoSource"
+    BEGIN
+        MENUITEM "AV1",                         ID_SOUR_AV1
+        MENUITEM "AV2",                         ID_SOUR_AV2
+        MENUITEM "SVIDEO",                      ID_SOUR_SVIDEO
+    END
+    POPUP "VideoStandard"
+    BEGIN
+        MENUITEM "PAL",                         ID_STAND_PAL
+        MENUITEM "NTSC",                        ID_STAND_NTSC
+    END
+    POPUP "Deinterlace"
+    BEGIN
+        MENUITEM "Default",                     ID_Deinterlace_LowCpu
+        MENUITEM "Standard",                    ID_Deinterlace_STD
+        MENUITEM "Good",                        ID_Deinterlace_GOOD
+        MENUITEM "Cancel",                      ID_Deinterlace_CANCEL
+    END
+    POPUP "ImageAlgorithm"
+    BEGIN
+        MENUITEM "Open",                        ID_DENOISE_STD
+    END
+    POPUP "VideoEffects "
+    BEGIN
+        MENUITEM "FlipVideo",                   ID_Flip_Video
+        MENUITEM "MirroVideo",                  ID_Mirror_Video
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CRAB                BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_BITMAP              BITMAP  DISCARDABLE     "res\\backGround.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\CRAB.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 dlgDemo(&A)... ShenZhen ZhongAn Vision"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\dlgDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

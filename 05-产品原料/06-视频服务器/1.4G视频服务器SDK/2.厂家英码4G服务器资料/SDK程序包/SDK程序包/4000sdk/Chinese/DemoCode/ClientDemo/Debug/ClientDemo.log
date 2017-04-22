@@ -1,0 +1,87 @@
+﻿生成启动时间为 2016/6/24 12:17:42。
+     1>项目“D:\项目管理\23.海关全向\所用资料\1.4G视频服务器SDK\英码4G服务器资料\SDK程序包\SDK程序包\4000sdk\Chinese\DemoCode\ClientDemo\ClientDemo.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“.\Debug\ClientDemo.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Program Files\VS2010\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /U_DEBUG /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Debug\ClientDemo.pch" /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+         D:\Program Files\VS2010\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /U_DEBUG /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug\ClientDemo.pch" /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt ClientDemo.cpp ClientDemoDlg.cpp ColorButton.cpp ColorDlg.cpp CruiseEdit.cpp DeviceEdit.cpp DeviceEditDlg.cpp DialogKeyBoard.cpp DlgCoverFile.cpp IPEdit.cpp LocalPlayback.cpp Markup.cpp multilanguage.cpp NetAlarmDlg.cpp PromptDlg.cpp PTZDlg.cpp RemotePlaybackDlg.cpp TabPlayback.cpp VideoWnd.cpp
+         VideoWnd.cpp
+     1>d:\项目管理\23.海关全向\所用资料\1.4g视频服务器sdk\英码4g服务器资料\sdk程序包\sdk程序包\4000sdk\chinese\democode\clientdemo\videownd.cpp(180): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\vs2010\vc\include\string.h(105) : 参见“strcpy”的声明
+         TabPlayback.cpp
+         RemotePlaybackDlg.cpp
+     1>d:\项目管理\23.海关全向\所用资料\1.4g视频服务器sdk\英码4g服务器资料\sdk程序包\sdk程序包\4000sdk\chinese\democode\clientdemo\remoteplaybackdlg.cpp(1245): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+     1>d:\项目管理\23.海关全向\所用资料\1.4g视频服务器sdk\英码4g服务器资料\sdk程序包\sdk程序包\4000sdk\chinese\democode\clientdemo\remoteplaybackdlg.cpp(1257): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>d:\项目管理\23.海关全向\所用资料\1.4g视频服务器sdk\英码4g服务器资料\sdk程序包\sdk程序包\4000sdk\chinese\democode\clientdemo\remoteplaybackdlg.cpp(1264): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+         PTZDlg.cpp
+         PromptDlg.cpp
+         NetAlarmDlg.cpp
+         multilanguage.cpp
+         Markup.cpp
+         Note: MBCS build (not UTF-8)
+         LocalPlayback.cpp
+     1>d:\项目管理\23.海关全向\所用资料\1.4g视频服务器sdk\英码4g服务器资料\sdk程序包\sdk程序包\4000sdk\chinese\democode\clientdemo\localplayback.cpp(179): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\vs2010\vc\include\string.h(105) : 参见“strcpy”的声明
+     1>d:\项目管理\23.海关全向\所用资料\1.4g视频服务器sdk\英码4g服务器资料\sdk程序包\sdk程序包\4000sdk\chinese\democode\clientdemo\localplayback.cpp(300): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>d:\项目管理\23.海关全向\所用资料\1.4g视频服务器sdk\英码4g服务器资料\sdk程序包\sdk程序包\4000sdk\chinese\democode\clientdemo\localplayback.cpp(307): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+     1>d:\项目管理\23.海关全向\所用资料\1.4g视频服务器sdk\英码4g服务器资料\sdk程序包\sdk程序包\4000sdk\chinese\democode\clientdemo\localplayback.cpp(315): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+         IPEdit.cpp
+         DlgCoverFile.cpp
+         DialogKeyBoard.cpp
+         DeviceEditDlg.cpp
+     1>d:\项目管理\23.海关全向\所用资料\1.4g视频服务器sdk\英码4g服务器资料\sdk程序包\sdk程序包\4000sdk\chinese\democode\clientdemo\deviceeditdlg.cpp(643): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+         DeviceEdit.cpp
+     1>d:\项目管理\23.海关全向\所用资料\1.4g视频服务器sdk\英码4g服务器资料\sdk程序包\sdk程序包\4000sdk\chinese\democode\clientdemo\deviceedit.cpp(174): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+         CruiseEdit.cpp
+         ColorDlg.cpp
+         ColorButton.cpp
+         ClientDemoDlg.cpp
+     1>d:\项目管理\23.海关全向\所用资料\1.4g视频服务器sdk\英码4g服务器资料\sdk程序包\sdk程序包\4000sdk\chinese\democode\clientdemo\clientdemodlg.cpp(197): warning C4244: “=”: 从“double”转换到“LONG”，可能丢失数据
+     1>d:\项目管理\23.海关全向\所用资料\1.4g视频服务器sdk\英码4g服务器资料\sdk程序包\sdk程序包\4000sdk\chinese\democode\clientdemo\clientdemodlg.cpp(198): warning C4244: “=”: 从“double”转换到“LONG”，可能丢失数据
+     1>d:\项目管理\23.海关全向\所用资料\1.4g视频服务器sdk\英码4g服务器资料\sdk程序包\sdk程序包\4000sdk\chinese\democode\clientdemo\clientdemodlg.cpp(235): warning C4244: “=”: 从“double”转换到“LONG”，可能丢失数据
+     1>d:\项目管理\23.海关全向\所用资料\1.4g视频服务器sdk\英码4g服务器资料\sdk程序包\sdk程序包\4000sdk\chinese\democode\clientdemo\clientdemodlg.cpp(441): warning C4244: “=”: 从“double”转换到“WORD”，可能丢失数据
+     1>d:\项目管理\23.海关全向\所用资料\1.4g视频服务器sdk\英码4g服务器资料\sdk程序包\sdk程序包\4000sdk\chinese\democode\clientdemo\clientdemodlg.cpp(442): warning C4244: “=”: 从“double”转换到“WORD”，可能丢失数据
+         ClientDemo.cpp
+     1>d:\项目管理\23.海关全向\所用资料\1.4g视频服务器sdk\英码4g服务器资料\sdk程序包\sdk程序包\4000sdk\chinese\democode\clientdemo\clientdemo.cpp(55): warning C4996: 'CWinApp::Enable3dControlsStatic': CWinApp::Enable3dControlsStatic is no longer needed. You should remove this call.
+                 d:\program files\vs2010\vc\atlmfc\include\afxwin.h(5347) : 参见“CWinApp::Enable3dControlsStatic”的声明
+     1>d:\项目管理\23.海关全向\所用资料\1.4g视频服务器sdk\英码4g服务器资料\sdk程序包\sdk程序包\4000sdk\chinese\democode\clientdemo\clientdemo.cpp(98): warning C4996: '_splitpath': This function or variable may be unsafe. Consider using _splitpath_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\vs2010\vc\include\stdlib.h(791) : 参见“_splitpath”的声明
+     1>d:\项目管理\23.海关全向\所用资料\1.4g视频服务器sdk\英码4g服务器资料\sdk程序包\sdk程序包\4000sdk\chinese\democode\clientdemo\clientdemo.cpp(110): warning C4996: '_splitpath': This function or variable may be unsafe. Consider using _splitpath_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files\vs2010\vc\include\stdlib.h(791) : 参见“_splitpath”的声明
+         正在生成代码...
+       ResourceCompile:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _VC80_UPGRADE=0x0600 /l"0x0804" /nologo /fo".\Debug\ClientDemo.res" ClientDemo.rc 
+       ManifestResourceCompile:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo".\Debug\ClientDemo.exe.embed.manifest.res" .\Debug\ClientDemo_manifest.rc 
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(990,5): warning MSB8012: TargetPath(D:\项目管理\23.海关全向\所用资料\1.4G视频服务器SDK\英码4G服务器资料\SDK程序包\SDK程序包\4000sdk\Chinese\DemoCode\ClientDemo\.\Debug\ClientDemo.exe) 与 Linker 的 OutputFile 属性值(D:\项目管理\23.海关全向\所用资料\1.4G视频服务器SDK\英码4G服务器资料\SDK程序包\SDK程序包\4000sdk\Chinese\DemoCode\bin\ClientDemo.exe)不匹配。这可能导致项目生成不正确。若要更正此问题，请确保 $(OutDir)、$(TargetName) 和 $(TargetExt) 属性值与 %(Link.OutputFile) 中指定的值匹配。
+       Link:
+         D:\Program Files\VS2010\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"../bin/ClientDemo.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:".\Debug\ClientDemo.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\项目管理\23.海关全向\所用资料\1.4G视频服务器SDK\英码4G服务器资料\SDK程序包\SDK程序包\4000sdk\Chinese\DemoCode\ClientDemo\Debug\ClientDemo.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\Debug\ClientDemo.lib" /MACHINE:X86 .\Debug\ClientDemo.res
+         .\Debug\ClientDemo.exe.embed.manifest.res
+         .\Debug\ClientDemo.obj
+         .\Debug\ClientDemoDlg.obj
+         .\Debug\ColorButton.obj
+         .\Debug\ColorDlg.obj
+         .\Debug\CruiseEdit.obj
+         .\Debug\DeviceEdit.obj
+         .\Debug\DeviceEditDlg.obj
+         .\Debug\DialogKeyBoard.obj
+         .\Debug\DlgCoverFile.obj
+         .\Debug\IPEdit.obj
+         .\Debug\LocalPlayback.obj
+         .\Debug\Markup.obj
+         .\Debug\multilanguage.obj
+         .\Debug\NetAlarmDlg.obj
+         .\Debug\PromptDlg.obj
+         .\Debug\PTZDlg.obj
+         .\Debug\RemotePlaybackDlg.obj
+         .\Debug\StdAfx.obj
+         .\Debug\TabPlayback.obj
+         .\Debug\VideoWnd.obj
+     1>LINK : fatal error LNK1123: 转换到 COFF 期间失败: 文件无效或损坏
+     1>已完成生成项目“D:\项目管理\23.海关全向\所用资料\1.4G视频服务器SDK\英码4G服务器资料\SDK程序包\SDK程序包\4000sdk\Chinese\DemoCode\ClientDemo\ClientDemo.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:34.24

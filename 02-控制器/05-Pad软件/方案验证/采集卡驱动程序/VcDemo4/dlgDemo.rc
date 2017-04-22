@@ -1,0 +1,388 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\dlgDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\dlgDemo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 dlgDemo"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "dlgDemo 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2011",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DLGDEMO_DIALOG DIALOGEX 0, 0, 563, 397
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "dlgDemo"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_ST_DISPLAY,"Static",SS_BLACKFRAME,7,7,460,383
+    PUSHBUTTON      "开始视频回调",IDC_BT_CALLBACK,490,147,54,22
+    PUSHBUTTON      "开始录像",IDC_BT_RECORD,490,249,54,22
+    PUSHBUTTON      "回调抓拍",IDC_BUTTON_CALLSNAP,490,181,54,22
+    PUSHBUTTON      "退出",IDC_BUTTON_EXIT,490,349,54,22
+    PUSHBUTTON      "暂停录像",IDC_BUTTON_PAUSEREC,490,283,54,22
+END
+
+IDD_COLORPROPERTYDLG_DIALOG DIALOG DISCARDABLE  0, 0, 256, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Default",IDC_DEF_COLOR_BUTTON,35,180,50,14
+    PUSHBUTTON      "OK",IDOKEXIT,129,180,50,14
+    LTEXT           "亮度:",IDC_STATIC,18,15,40,16
+    LTEXT           "对比度：",IDC_STATIC,15,49,29,11
+    LTEXT           "饱和度",IDC_STATIC,15,78,33,12
+    LTEXT           "灰度：",IDC_STATIC,13,108,27,12
+    LTEXT           "锐度",IDC_STATIC,15,134,33,14
+    LTEXT           "Static",IDC_BRIGHTNESS_STATIC,203,17,33,15
+    LTEXT           "Static",IDC_CONTRAST_STATIC,205,47,28,14
+    LTEXT           "Static",IDC_SATURATION_STATIC,201,79,36,15
+    LTEXT           "Static",IDC_HUE_STATIC,204,110,38,14
+    LTEXT           "Static",IDC_SHARPNESS_STATIC,204,140,38,14
+    CONTROL         "Slider1",IDC_BRIGHTNESS_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,63,15,123,8
+    CONTROL         "Slider2",IDC_CONTRAST_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,61,42,120,14
+    CONTROL         "Slider3",IDC_SATURATION_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,60,72,116,11
+    CONTROL         "Slider4",IDC_HUE_SLIDER,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,62,103,117,8
+    CONTROL         "Slider5",IDC_SHARPNESS_SLIDER,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,55,137,128,13
+END
+
+IDD_CODECSETTINGFRM_DIALOG DIALOG DISCARDABLE  0, 0, 291, 268
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,112,230,50,14
+    LTEXT           "VideoCodec",IDC_STATIC,19,22,48,16
+    LTEXT           "AudioCodec",IDC_STATIC,20,55,50,16
+    COMBOBOX        IDC_COMBO_VIDEOCODEC,75,23,183,97,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "枚举到系统中编码器信息",IDC_STATIC,13,7,261,72
+    GROUPBOX        "编码器选择",IDC_STATIC,15,89,259,55
+    CONTROL         "H264 Codec",IDC_RADIO_H264,"Button",BS_AUTORADIOBUTTON,
+                    198,106,57,23
+    CONTROL         "XVID Codec",IDC_RADIO_XVID,"Button",BS_AUTORADIOBUTTON,
+                    21,105,59,23
+    CONTROL         "DIVX5 Codec",IDC_RADIO_DIVX,"Button",BS_AUTORADIOBUTTON,
+                    107,105,57,23
+    COMBOBOX        IDC_COMBO_AUDIOCODEC,75,53,183,97,CBS_DROPDOWN | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "文件存储路径设置",IDC_STATIC,16,151,259,66
+    LTEXT           "图片文件存储路径：",IDC_STATIC,23,169,79,18
+    LTEXT           "录像文件存储路径：",IDC_STATIC,23,192,74,16
+    EDITTEXT        IDC_EDIT_SNAPDIR,94,165,132,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAP_DIR_EDIT,95,191,127,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览",IDC_BUTTON_BROWSE_SNAPDIR,233,163,34,16
+    PUSHBUTTON      "浏览",IDC_BUTTON_BROWSE_RECDIR,233,188,34,16
+END
+
+IDD_CVIDEODENOISEFRM_DIALOG DIALOG DISCARDABLE  0, 0, 310, 198
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,135,171,50,14
+    LTEXT           "对比度增强：",IDC_STATIC,16,145,61,16
+    LTEXT           "Value=0 :Cancel the function",IDC_STATIC,110,13,155,12
+    CONTROL         "Slider1",IDC_SLIDER_DENOISE,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,69,30,193,12
+    LTEXT           "Static",IDC_STATIC_DENOISE,272,28,31,15
+    LTEXT           "降噪值：",IDC_STATIC,21,27,56,16
+    CONTROL         "Slider1",IDC_SLIDER_SHARP,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,71,71,193,12
+    LTEXT           "Static",IDC_STATIC_SHARP,270,71,31,15
+    CONTROL         "Slider1",IDC_SLIDER_BRIGHT,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,71,109,191,12
+    CONTROL         "Slider1",IDC_SLIDER_CONTRACT,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,67,144,191,12
+    LTEXT           "亮度增强：",IDC_STATIC,17,107,56,16
+    LTEXT           "视频锐化：",IDC_STATIC,21,70,47,17
+    LTEXT           "Static",IDC_STATIC_BRIGHT,271,101,31,15
+    LTEXT           "Static",IDC_STATIC_CONTRAST,271,137,31,15
+END
+
+IDD_OSDSETTING_DIALOG DIALOG DISCARDABLE  0, 0, 491, 345
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,123,321,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,344,316,50,14
+    CONTROL         "开启时间OSD",IDC_TIMEOSD_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,23,91,13
+    CONTROL         "透明叠加",IDC_TIMETRAN_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,40,92,17
+    GROUPBOX        "Time OSD Setting",IDC_STATIC,7,7,120,185
+    LTEXT           "X:",IDC_STATIC,18,67,28,16
+    LTEXT           "Y:",IDC_STATIC,17,89,23,10
+    LTEXT           "字体大小",IDC_STATIC,12,118,36,15
+    LTEXT           "字体颜色",IDC_STATIC,12,148,42,14
+    EDITTEXT        IDC_TimeFontSize_EDIT1,62,119,61,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TimePlaceX_EDIT,62,65,61,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TimePlaceY_EDIT,62,90,61,16,ES_AUTOHSCROLL
+    GROUPBOX        "Txt1 OSD Setting",IDC_STATIC,140,7,152,186
+    CONTROL         "开启第一行文本叠加",IDC_TEXTOSD_CHECK1,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,147,17,91,13
+    CONTROL         "透明叠加",IDC_TEXTTRAN_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,147,31,92,17
+    LTEXT           "X:",IDC_STATIC,143,60,28,16
+    LTEXT           "Y:",IDC_STATIC,141,91,23,10
+    LTEXT           "字体大小",IDC_STATIC,144,118,36,15
+    LTEXT           "字体颜色",IDC_STATIC,146,173,42,14
+    EDITTEXT        IDC_TextFontSize_EDIT1,189,116,61,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEXTPlaceX_EDIT1,189,57,61,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TextPlaceY_EDIT1,188,88,61,16,ES_AUTOHSCROLL
+    GROUPBOX        "Picture OSD Setting",IDC_STATIC,7,201,477,112
+    CONTROL         "开启图片叠加",IDC_PICTUREOSD_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,22,217,91,13
+    LTEXT           "X:",IDC_STATIC,23,238,17,16
+    LTEXT           "Y:",IDC_STATIC,21,260,23,10
+    EDITTEXT        IDC_PicturePlaceX_EDIT,50,235,61,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PicturePlaceY_EDIT,50,257,61,16,ES_AUTOHSCROLL
+    GROUPBOX        "Txt2 OSD Setting",IDC_STATIC,315,7,153,184
+    CONTROL         "开启第二行文本叠加",IDC_TEXTOSD_CHECK2,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,327,20,91,13
+    CONTROL         "透明叠加",IDC_TEXTTRAN_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,328,36,92,17
+    LTEXT           "X:",IDC_STATIC,333,57,28,16
+    LTEXT           "Y:",IDC_STATIC,331,83,23,10
+    LTEXT           "字体大小",IDC_STATIC,322,108,36,15
+    LTEXT           "字体颜色",IDC_STATIC,323,169,42,14
+    EDITTEXT        IDC_TextFontSize_EDIT3,369,105,61,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEXTPlaceX_EDIT2,369,55,61,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TextPlaceY_EDIT2,367,79,61,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "颜色设置",IDC_BUTTON_COLOR2,189,164,66,18
+    PUSHBUTTON      "颜色设置",IDC_BUTTON_COLOR3,367,157,68,18
+    PUSHBUTTON      "颜色设置",IDC_BUTTON_COLOR1,54,146,68,18
+    LTEXT           "叠加文本",IDC_STATIC,325,131,39,18
+    LTEXT           "叠加文本",IDC_STATIC,141,148,39,18
+    EDITTEXT        IDC_Texosd_EDIT4,187,143,61,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Texosd_EDIT5,369,131,61,16,ES_AUTOHSCROLL
+    LTEXT           "叠加图片文件",IDC_STATIC,21,277,59,16
+    EDITTEXT        IDC_PictureFile_EDIT,88,277,165,16,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览",IDC_OPENFILE_BUTTON,270,278,57,18
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,0,0,0
+ PRODUCTVERSION 2,0,0,2
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x9L
+#else
+ FILEFLAGS 0x8L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "ShenZhen ZhongAn Vision\0"
+            VALUE "FileDescription", "dlgDemo Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "2, 0, 0, 0\0"
+            VALUE "InternalName", "dlgDemo\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2013\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "dlgDemo.EXE\0"
+            VALUE "PrivateBuild", "Tony yu 2810482962@qq.com\0"
+            VALUE "ProductName", "dlgDemo 应用程序\0"
+            VALUE "ProductVersion", "2, 0, 0, 2\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DLGDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 555
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 390
+    END
+
+    IDD_COLORPROPERTYDLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_CODECSETTINGFRM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 261
+    END
+
+    IDD_CVIDEODENOISEFRM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+
+    IDD_OSDSETTING_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 484
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 338
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 dlgDemo(&A)... ShenZhen ZhongAn Vision"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\dlgDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

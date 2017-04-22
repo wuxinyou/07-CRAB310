@@ -1,0 +1,55 @@
+Removed Pin From Net: NetName=GND Pin=C72-1
+Removed Pin From Net: NetName=NetC72_2 Pin=C72-2
+Removed Pin From Net: NetName=+5V Pin=G1-1
+Removed Pin From Net: NetName=5V_A2 Pin=G1-3
+Removed Pin From Net: NetName=+5VOUT Pin=G1-4
+Removed Pin From Net: NetName=+3.3VOUT Pin=G1-5
+Removed Pin From Net: NetName=+3.3V Pin=G1-6
+Removed Pin From Net: NetName=PAD_D- Pin=J3-1
+Removed Pin From Net: NetName=PAD_D+ Pin=J3-2
+Removed Pin From Net: NetName=GND Pin=J3-3
+Removed Pin From Net: NetName=NetC6_1 Pin=J3-4
+Removed Pin From Net: NetName=VBAT+ Pin=J7-1
+Removed Pin From Net: NetName=GND Pin=J7-2
+Removed Pin From Net: NetName=VBAT+ Pin=J8-1
+Removed Pin From Net: NetName=GND Pin=J8-2
+Removed Pin From Net: NetName=CTRVBT Pin=U5-19
+Removed Pin From Net: NetName=CTRPOW Pin=U5-20
+Removed Member From Class: ClassName=Designator Member=C72
+Removed Member From Class: ClassName=Designator Member=G1
+Change Component Footprint: Designator=J7 Old Footprint=XH-2AW New Footprint=35363-0260
+Change Component Footprint: Designator=J8 Old Footprint=XH-2AW New Footprint=35363-0260
+Change Component Footprint: Designator=J3 Old Footprint=XH-4AW New Footprint=35363-0460
+Added Component: Designator=J16(35363-0260)
+Added Component: Designator=K1(G6K-2F-Y)
+Added Pin To Net: NetName=NetC72_2 Pin=C39-2
+Added Pin To Net: NetName=NetC6_1 Pin=J3-1
+Added Pin To Net: NetName=GND Pin=J3-2
+Added Pin To Net: NetName=PAD_D+ Pin=J3-3
+Added Pin To Net: NetName=PAD_D- Pin=J3-4
+Added Pin To Net: NetName=GND Pin=J7-1
+Added Pin To Net: NetName=VBAT+ Pin=J7-2
+Added Pin To Net: NetName=GND Pin=J8-1
+Added Pin To Net: NetName=VBAT+ Pin=J8-2
+Added Pin To Net: NetName=AGND1 Pin=J16-2
+Added Pin To Net: NetName=+12V Pin=K1-1
+Added Pin To Net: NetName=5V_A2 Pin=K1-3
+Added Pin To Net: NetName=+5VOUT Pin=K1-4
+Added Pin To Net: NetName=+3.3VOUT Pin=K1-5
+Added Pin To Net: NetName=+3.3V Pin=K1-6
+Added Pin To Net: NetName=NetC72_2 Pin=R24-2
+Added Pin To Net: NetName=AGND1 Pin=U3-9
+Added Pin To Net: NetName=CTRPOW Pin=U5-19
+Added Pin To Net: NetName=CTRVBT Pin=U5-20
+Change Net Name : Old Net Name=NetC72_2 New Net Name=NetC39_2
+Added Pin To Net: NetName=NetK1_8 Pin=K1-8
+Added Pin To Net: NetName=NetK1_8 Pin=R29-2
+Added Net: Name=NetK1_8
+Added Pin To Net: NetName=NetR21_1 Pin=R21-1
+Added Pin To Net: NetName=NetR21_1 Pin=S2-1
+Added Net: Name=NetR21_1
+Added Pin To Net: NetName=VEDIO Pin=J16-1
+Added Pin To Net: NetName=VEDIO Pin=U2-8
+Added Pin To Net: NetName=VEDIO Pin=U3-6
+Added Net: Name=VEDIO
+Added Member To Class: ClassName=Designator Member=Component K1 G6K-2F-Y

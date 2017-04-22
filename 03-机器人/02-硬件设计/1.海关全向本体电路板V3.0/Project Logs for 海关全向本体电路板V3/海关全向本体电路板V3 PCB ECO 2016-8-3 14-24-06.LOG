@@ -1,0 +1,41 @@
+Removed Pin From Net: NetName=+12V_A Pin=J6-1
+Removed Pin From Net: NetName=GND_A Pin=J6-2
+Removed Pin From Net: NetName=12V2OUT Pin=J6-4
+Removed Pin From Net: NetName=GND_P Pin=J6-5
+Removed Pin From Net: NetName=3.3V Pin=R4-2
+Removed Pin From Net: NetName=NetU3_63 Pin=U10-2
+Removed Pin From Net: NetName=NetU3_64 Pin=U10-3
+Removed Pin From Net: NetName=GND_P Pin=U10-4
+Removed Member From Class: ClassName=海关全向本体电路板V1.1_电平转换 Member=R4
+Change Component DesignItemId : Designator=U10 Old DesignItemId=MPU6050_Module New DesignItemId=Uranus2-Lite
+Change Component Footprint: Designator=U10 Old Footprint=MPU6050_Module New Footprint=Uranus2-Lite
+Change Component Comment : Designator=U2 Old Comment=ISO7241A New Comment=ISO7241CDWR
+Change Component Comment : Designator=U12 Old Comment=ISO7241A New Comment=ISO7241CDWR
+Change Component Comment : Designator=U10 Old Comment=MPU6050 New Comment=Uranus2-Lite
+Added Component: Designator=TP2(MARK-S)
+Added Component: Designator=TP4(MARK-S)
+Added Component: Designator=TP6(MARK-S)
+Added Pin To Net: NetName=GND_P Pin=J6-1
+Added Pin To Net: NetName=12V2OUT Pin=J6-2
+Added Pin To Net: NetName=GND_A Pin=J6-4
+Added Pin To Net: NetName=+12V_A Pin=J6-5
+Added Pin To Net: NetName=GND_P Pin=U10-2
+Added Pin To Net: NetName=NetU3_63 Pin=U10-7
+Added Pin To Net: NetName=NetU3_64 Pin=U10-8
+Added Pin To Net: NetName=NetU3_33 Pin=U3-33
+Added Pin To Net: NetName=NetU3_33 Pin=U21-16
+Added Net: Name=NetU3_33
+Change Class Name : Old Net Name=海关全向本体电路板V1.1_2路电池接入 New Net Name=海关全向本体电路板V3_2路电池接入
+Change Class Name : Old Net Name=海关全向本体电路板V1.1_Mpu6050模块 New Net Name=海关全向本体电路板V3_Mpu6050模块
+Change Class Name : Old Net Name=海关全向本体电路板V1.1_TTL通信 New Net Name=海关全向本体电路板V3_TTL通信
+Change Class Name : Old Net Name=海关全向本体电路板V1.1_主控芯片 New Net Name=海关全向本体电路板V3_主控芯片
+Change Class Name : Old Net Name=海关全向本体电路板V1.1_扩展RS485通信 New Net Name=海关全向本体电路板V3_扩展RS485通信
+Change Class Name : Old Net Name=海关全向本体电路板V1.1_数图传通信 New Net Name=海关全向本体电路板V3_数图传通信
+Change Class Name : Old Net Name=海关全向本体电路板V1.1_电平转换 New Net Name=海关全向本体电路板V3_电平转换
+Change Class Name : Old Net Name=海关全向本体电路板V1.1_电机驱动管理 New Net Name=海关全向本体电路板V3_电机驱动管理
+Change Class Name : Old Net Name=海关全向本体电路板V1.1_电源管理 New Net Name=海关全向本体电路板V3_电源管理
+Change Class Name : Old Net Name=海关全向本体电路板V1.1_系统管理 New Net Name=海关全向本体电路板V3_系统管理
+Change Class Name : Old Net Name=海关全向本体电路板V1.1_通信隔离 New Net Name=海关全向本体电路板V3_通信隔离
+Added Member To Class: ClassName=海关全向本体电路板V3_电源管理 Member=Component TP2 TestPoint
+Added Member To Class: ClassName=海关全向本体电路板V3_电源管理 Member=Component TP4 TestPoint
+Added Member To Class: ClassName=STM32F407VG-C Member=Component TP6 TestPoint

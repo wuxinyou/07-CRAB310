@@ -1,0 +1,7 @@
+Change Component Footprint: Designator=U2 Old Footprint=SSOP16 New Footprint=SO16-290
+Change Component Footprint: Designator=U12 Old Footprint=SSOP16 New Footprint=SO16-290
+Added Component: Designator=J29(HX20020-3A)
+Added Pin To Net: NetName=5V Pin=J29-1
+Added Pin To Net: NetName=GND_P Pin=J29-2
+Added Pin To Net: NetName=12V Pin=J29-3
+Added Member To Class: ClassName=海关全向本体电路板V3_系统管理 Member=Component J29 HX20020-3A

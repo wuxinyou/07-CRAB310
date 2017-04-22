@@ -1,0 +1,5 @@
+--cpp -c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I.\Includes\STM32_CMSIS -I.\Includes\STM32_Driver -I.\Includes\Protocol -I.\Includes\App -I.\Includes -I.\Includes\STM32_StdPeriph -I.\Includes\DataType -I.\Includes\User 
+-I C:\Keil\ARM\RV31\INC 
+-I C:\Keil\ARM\CMSIS\Include 
+-I C:\Keil\ARM\Inc\ST\STM32F10x 
+-DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o ".\OBJ\serialport.o" --omf_browse ".\OBJ\serialport.crf" --depend ".\OBJ\serialport.d" "source\DataType\SerialPort.cpp"

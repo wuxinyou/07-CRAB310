@@ -1,0 +1,14 @@
+Removed Member From Class: ClassName=海关全向本体电路板V3_电源管理 Member=TP4
+Added Component: Designator=R4(R1206-S)
+Added Component: Designator=R5(R1206-S)
+Added Component: Designator=TP3(MARK-S)
+Added Component: Designator=TP5(MARK-S)
+Added Pin To Net: NetName=GND_P Pin=R4-1
+Added Pin To Net: NetName=CHARGE2- Pin=R4-2
+Added Pin To Net: NetName=GND_P Pin=R5-1
+Added Pin To Net: NetName=CHARGE1- Pin=R5-2
+Added Member To Class: ClassName=海关全向本体电路板V3_系统管理 Member=Component R4 0R
+Added Member To Class: ClassName=海关全向本体电路板V3_系统管理 Member=Component R5 0R
+Added Member To Class: ClassName=海关全向本体电路板V3_电源管理 Member=Component TP3 TestPoint
+Added Member To Class: ClassName=海关全向本体电路板V3_电源管理 Member=Component TP5 TestPoint
+Added Member To Class: ClassName=海关全向本体电路板V3_扩展RS485通信 Member=Component U9 SP3078EEN-L/TR

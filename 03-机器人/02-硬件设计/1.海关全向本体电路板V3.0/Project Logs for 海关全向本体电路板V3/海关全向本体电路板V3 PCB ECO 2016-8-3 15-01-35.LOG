@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=GND_P Pin=U4-2
+Removed Pin From Net: NetName=GND_A Pin=U4-5
+Removed Pin From Net: NetName=+12V_A Pin=U4-6
+Change Component DesignItemId : Designator=U4 Old DesignItemId=HZD20D-24S12W New DesignItemId=KHHD002A5B
+Change Component Footprint: Designator=U4 Old Footprint=HZD20D-24S12W New Footprint=KHHD002A5B
+Change Component Comment : Designator=U4 Old Comment=HZD20D-24S12W New Comment=KHHD002A5B
+Added Pin To Net: NetName=GND_P Pin=U4-3
+Added Pin To Net: NetName=GND_A Pin=U4-4
+Added Pin To Net: NetName=+12V_A Pin=U4-8

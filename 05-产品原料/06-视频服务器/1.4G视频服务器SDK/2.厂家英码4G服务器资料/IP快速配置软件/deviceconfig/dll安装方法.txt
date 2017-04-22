@@ -1,0 +1,25 @@
+脚本之家下载-dll下载频道，帮您搞定文件丢失问题
+
+www.jb51.net/dll/部分dll文件中有多个目录分别表示多个系统专用文件
+
+X86表示32位系统
+x64表示64位系统
+
+dll控件常规安装方法（仅供参考）：
+
+一、如果在运行某软件或编译程序时提示缺少、找不到dll等类似提示，您可将从脚本之家下载来的dll拷贝到指定目录即可(一般是system系统目录或放到软件同级目录里面)，或者重新添加文件引用。 
+二、直接拷贝该文件到系统目录里：
+　　 1、Windows 95/98/Me系统，将dll复制到C:\Windows\System目录下。
+　　 2、Windows NT/2000系统，将dll复制到C:\WINNT\System32目录下。
+　　 3、Windows XP/WIN7系统，将dll复制到C:\Windows\System32目录下。
+三、打开"开始-运行-输入regsvr32 dll"，回车即可解决。希望脚本之家为您提供的dll对您有所帮助。 
+
+通过脚本之家下载dll的朋友，可将下面的代码保存为“注册.bat“，放到dll目录，就会自动完成dll注册(win98不支持)。
+
+
+
+@echo 开始注册
+copy dll %windir%\system32\
+regsvr32 %windir%\system32\dll /s
+@echo dll注册成功
+@pause

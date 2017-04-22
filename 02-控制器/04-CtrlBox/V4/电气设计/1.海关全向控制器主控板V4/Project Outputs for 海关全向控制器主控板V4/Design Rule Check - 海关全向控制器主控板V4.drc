@@ -1,0 +1,51 @@
+Protel Design System Design Rule Check
+PCB File : D:\工作文件\海关全向\1.海关全向控制器主控板V4\海关全向控制器主控板V4.PcbDoc
+Date     : 2016/10/31
+Time     : 16:36:42
+
+Processing Rule : Silk primitive without silk layer
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-430.672mil,-1.458mil)(435.47mil,-1.458mil)  Bottom Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (435.47mil,-216.025mil)(435.47mil,175.708mil)  Bottom Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-430.672mil,-216.025mil)(-430.672mil,175.708mil)  Bottom Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (2038.252mil,331.63mil)(2038.252mil,629.507mil)  Top Overlay
+Rule Violations :4
+
+Processing Rule : Clearance Constraint (Gap=7mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=10mil) (Max=157.48mil) (Preferred=10mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=200mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=2000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=6mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0mil) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 4
+Time Elapsed        : 00:00:01

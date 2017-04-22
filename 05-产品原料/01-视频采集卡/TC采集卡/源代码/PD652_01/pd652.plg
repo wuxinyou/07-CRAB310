@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: pd652 - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP1E5E.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_AFXDLL" /FR"Release/" /Fp"Release/pd652.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\01-CYDL\27-CRAB\TC采集卡\源代码\PD652_01\VideoInputDlg.cpp"
+"E:\01-CYDL\27-CRAB\TC采集卡\源代码\PD652_01\VideoQualityDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP1E5E.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP1E5F.tmp" with contents
+[
+QCAP.lib VFW32.LIB /nologo /subsystem:windows /incremental:no /pdb:"Release/pd652.pdb" /map:"Release/pd652.map" /machine:I386 /out:"Release/pd652.exe" 
+".\Release\AduioInputDlg.obj"
+".\Release\ChannelWindow.obj"
+".\Release\pd652.obj"
+".\Release\pd652Dlg.obj"
+".\Release\SetupDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\VideoInputDlg.obj"
+".\Release\VideoQualityDlg.obj"
+".\Release\pd652.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP1E5F.tmp"
+<h3>Output Window</h3>
+Compiling...
+VideoInputDlg.cpp
+VideoQualityDlg.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP2478.tmp" with contents
+[
+/nologo /o"Release/pd652.bsc" 
+".\Release\StdAfx.sbr"
+".\Release\AduioInputDlg.sbr"
+".\Release\ChannelWindow.sbr"
+".\Release\pd652.sbr"
+".\Release\pd652Dlg.sbr"
+".\Release\SetupDlg.sbr"
+".\Release\VideoInputDlg.sbr"
+".\Release\VideoQualityDlg.sbr"]
+Creating command line "bscmake.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP2478.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+pd652.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

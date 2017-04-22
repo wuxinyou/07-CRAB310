@@ -1,0 +1,289 @@
+;------------------------------------------------------------------------
+; 
+;  Copyright and Disclaimer: 
+;  
+;     --------------------------------------------------------------- 
+;     This software is provided "AS IS" without warranty of any kind, 
+;     either expressed or implied, including but not limited to the 
+;     implied warranties of noninfringement, merchantability and/or 
+;     fitness for a particular purpose.
+;     --------------------------------------------------------------- 
+;   
+;     Copyright (c) 2014  ShenZhen ZhongAn Vision  
+;     All rights reserved. 
+;
+;------------------------------------------------------------------------
+
+[Version]
+signature="$Windows NT$"
+Class=Media
+ClassGUID={4d36e96c-e325-11ce-bfc1-08002be10318}
+Provider="ZhongAn"
+DriverVer=05/28/2014,1.0.0.0
+CatalogFile.ntx86=us2000.cat
+CatalogFile=us2000.cat
+
+[Manufacturer]
+"ZhongAn"=Zhongan,NTamd64
+
+[SourceDisksNames]
+1="ZhongAn US2000 Drivers",,,""
+
+[SourceDisksFiles]
+us2000.sys=1
+
+[Zhongan]
+%US2000.DeviceDesc%=US2000,  USB\VID_04B4&PID_8613
+%US2000.DeviceDesc%=US2000,  USB\VID_04B4&PID_1003
+%US2000.DeviceDesc%=US2000,  USB\VID_0572&PID_8398
+%US2000.DeviceDesc%=US2000,  USB\VID_0628&PID_2008
+%US2000.DeviceDesc%=US2000,  USB\VID_0588&PID_1668
+
+[Hongan.NT]
+%US2000.DeviceDesc%=US2000,  USB\VID_04B4&PID_8613
+%US2000.DeviceDesc%=US2000,  USB\VID_04B4&PID_1003
+%US2000.DeviceDesc%=US2000,  USB\VID_0572&PID_8398
+%US2000.DeviceDesc%=US2000,  USB\VID_0628&PID_2008
+%US2000.DeviceDesc%=US2000,  USB\VID_0588&PID_1668
+
+[Hongan.NTx86]
+%US2000.DeviceDesc%=US2000,  USB\VID_04B4&PID_8613
+%US2000.DeviceDesc%=US2000,  USB\VID_04B4&PID_1003
+%US2000.DeviceDesc%=US2000,  USB\VID_0572&PID_8398
+%US2000.DeviceDesc%=US2000,  USB\VID_0628&PID_2008
+%US2000.DeviceDesc%=US2000,  USB\VID_0588&PID_1668
+
+[Zhongan.NTamd64]
+%US2000.DeviceDesc%=US2000,  USB\VID_04B4&PID_8613
+%US2000.DeviceDesc%=US2000,  USB\VID_04B4&PID_1003
+%US2000.DeviceDesc%=US2000,  USB\VID_0572&PID_8398
+%US2000.DeviceDesc%=US2000,  USB\VID_0628&PID_2008
+%US2000.DeviceDesc%=US2000,  USB\VID_0588&PID_1668
+
+[US2000]
+Include=    ks.inf, kscaptur.inf, wdmaudio.inf
+Needs=      KS.Registration, KSCAPTUR.Registration, WDMAUDIO.Registration
+AddReg=     US2000.AddReg,VID.AddReg
+CopyFiles=  US2000.CopyDrivers
+
+[US2000.NT]
+Include=    ks.inf, kscaptur.inf, wdmaudio.inf
+Needs=      KS.Registration.NT, KSCAPTUR.Registration.NT, WDMAUDIO.Registration
+AddReg=     US2000.AddReg,VID.AddReg
+CopyFiles=  US2000.CopyDrivers
+
+[US2000.NTx86]
+Include=    ks.inf, kscaptur.inf, wdmaudio.inf
+Needs=      KS.Registration.NT, KSCAPTUR.Registration.NT, WDMAUDIO.Registration
+AddReg=     US2000.AddReg,VID.AddReg
+CopyFiles=  US2000.CopyDrivers
+
+[US2000.NTamd64]
+Include=    ks.inf, kscaptur.inf, wdmaudio.inf
+Needs=      KS.Registration.NT, KSCAPTUR.Registration.NT, WDMAUDIO.Registration
+AddReg=     US2000.AddReg,VID.AddReg
+CopyFiles=  US2000.CopyDrivers
+
+[DestinationDirs]
+US2000.CopyDrivers=10,system32\drivers
+
+[US2000.CopyDrivers]
+us2000.sys
+
+[VID.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,us2000.sys
+HKR,,OkToHibernate,3,01
+; Disable driver page out
+HKR,,PageOutWhenUnopened,3,0
+HKR,,DontSuspendIfStreamsAreRunning,3,01
+;Copy protection method enforced by driver
+HKR,"DriverData","CpMethod",0x00010001, 0x03, 0x00, 0x00, 0x00
+
+[US2000.AddReg]
+
+;-------------------------------------------------------------------
+; Crossbar AddReg sections
+;
+;---Crossbar registry values---
+;
+; Note: For each pin on the crossbar, specify the following:
+; (1) Pin type
+;     0 - SVIDEO
+;     1 - Tuner
+;     2 - Composite
+;     3 - audio tuner in
+;     4 - audio line in
+; (2) InputMode (See Saa7115 datasheet, Analog Input Control 1 register) - input mode to use for the selected pin
+;     Mode 0: CVBS (automatic gain) from AI11
+;     Mode 1: CVBS (automatic gain) from AI12
+;     Mode 2: CVBS (automatic gain) from AI21
+;     Mode 3: CVBS (automatic gain) from AI22
+;     Mode 4: CVBS (automatic gain) from AI23
+;     Mode 5: CVBS (automatic gain) from AI24
+;     Mode 6: Y (automatic gain) from AI11 + C (gain adjusted via GAI2[8:0]) from AI21
+;     Mode 7: Y (automatic gain) from AI12 + C (gain adjusted via GAI2[8:0]) from AI22
+;     Mode 8: Y (automatic gain) from AI11 + C (gain channel 2 adapted to Y gain) from AI21
+;     Mode 9: Y (automatic gain) from AI12 + C (gain channel 2 adapted to Y gain) from AI22
+; (3) RelatedPinIndex
+;-------------------------------------------------------------------
+
+
+;---Crossbar registry values---
+
+;Pin 0 - Composite in AV1
+HKR,"DriverData\XBarPin0","PinType",0x00010001, 0x02,0x00,0x00,0x00
+HKR,"DriverData\XBarPin0","InputMode",0x00010001, 0x03,0x00,0x00,0x00
+
+;Pin 1 - Composite in AV2
+HKR,"DriverData\XBarPin1","PinType",0x00010001, 0x02,0x00,0x00,0x00
+HKR,"DriverData\XBarPin1","InputMode",0x00010001, 0x01,0x00,0x00,0x00
+
+;Pin 2 - S-Video in
+HKR,"DriverData\XBarPin2","PinType",0x00010001, 0x00,0x00,0x00,0x00
+HKR,"DriverData\XBarPin2","InputMode",0x00010001, 0x08,0x00,0x00,0x00
+
+;Video Input Select, Composite in AV1 is the default
+HKR,"DriverData","VideoInputPin",0x00010001, 0x00,0x00,0x00,0x00
+
+;Video Standard, PAL_B(KS_AnalogVideo_PAL_B) is default
+; Valid Values:
+; NTSC_M(KS_AnalogVideo_NTSC_M):     0x00000001
+; NTSC_M_J(KS_AnalogVideo_NTSC_M_J): 0x00000002
+; NTSC_433(KS_AnalogVideo_NTSC_433): 0x00000004
+; PAL_B(KS_AnalogVideo_PAL_B):       0x00000010
+; PAL_D(KS_AnalogVideo_PAL_D):       0x00000020
+; PAL_G(KS_AnalogVideo_PAL_G):       0x00000040
+; PAL_H(KS_AnalogVideo_PAL_H):       0x00000080
+; PAL_I(KS_AnalogVideo_PAL_I):       0x00000100
+; PAL_M(KS_AnalogVideo_PAL_M):       0x00000200
+; PAL_N(KS_AnalogVideo_PAL_N):       0x00000400
+; PAL_60(KS_AnalogVideo_PAL_60):     0x00000800
+; SECAM_B(KS_AnalogVideo_SECAM_B):   0x00001000
+; SECAM_D(KS_AnalogVideo_SECAM_D):   0x00002000
+; SECAM_G(KS_AnalogVideo_SECAM_G):   0x00004000
+; SECAM_H(KS_AnalogVideo_SECAM_H):   0x00008000
+; SECAM_K(KS_AnalogVideo_SECAM_K):   0x00010000
+; SECAM_K1(KS_AnalogVideo_SECAM_K1): 0x00020000
+; SECAM_L(KS_AnalogVideo_SECAM_L):   0x00040000
+; SECAM_L1(KS_AnalogVideo_SECAM_L1): 0x00080000
+HKR,"DriverData","VideoStandard",0x00010001, 0x20,0x00,0x00,0x00
+
+;Brightness, default: 0x80, range: 0x00-0xFF
+HKR,"DriverData","Brightness",0x00010001, 0x80,0x00,0x00,0x00
+
+;Contrast, default: 0x44, range: 0x00-0x7F
+HKR,"DriverData","Contrast",0x00010001, 0x44,0x00,0x00,0x00
+
+;Saturation, default: 0x40, range: 0x00-0x7F
+HKR,"DriverData","Saturation",0x00010001, 0x40,0x00,0x00,0x00
+
+;Hue, default: 0x00, range: 0x80(-128)-0x7F(+127)
+HKR,"DriverData","Hue",0x00010001, 0x00,0x00,0x00,0x00
+
+;Sharpness, default: 0x8, range: 0x00-0x0F
+HKR,"DriverData","Sharpness",0x00010001, 0x08,0x00,0x00,0x00
+
+
+;
+; Interfaces installation
+;
+
+;
+; Video
+;
+
+[US2000.Interfaces]
+AddInterface={65e8773d-8f56-11d0-a3b9-00a0c9223196},%KsNameFilter%,VID_Interface,
+AddInterface={a799a801-a46d-11d0-a18c-00a02401dcd4},%XBARReferenceGUID%,HAXBAR_Interface,
+
+[US2000.NT.Interfaces]
+AddInterface={65e8773d-8f56-11d0-a3b9-00a0c9223196},%KsNameFilter%,VID_Interface,
+AddInterface={a799a801-a46d-11d0-a18c-00a02401dcd4},%XBARReferenceGUID%,HAXBAR_Interface,
+
+[US2000.NTx86.Interfaces]
+AddInterface={65e8773d-8f56-11d0-a3b9-00a0c9223196},%KsNameFilter%,VID_Interface,
+AddInterface={a799a801-a46d-11d0-a18c-00a02401dcd4},%XBARReferenceGUID%,HAXBAR_Interface,
+
+[US2000.NTamd64.Interfaces]
+AddInterface={65e8773d-8f56-11d0-a3b9-00a0c9223196},%KsNameFilter%,VID_Interface,
+AddInterface={a799a801-a46d-11d0-a18c-00a02401dcd4},%XBARReferenceGUID%,HAXBAR_Interface,
+
+[VID_Interface]
+AddReg=VID_Interface.AddReg
+AddReg=US2000_DESCRIPTION.AddReg
+
+[VID_Interface.AddReg]
+HKR,,CLSID,,%Proxy.CLSID%       ; {17CCA71B-ECD7-11D0-B908-00A0C9223196}
+HKR,,FriendlyName,,%VIDFriendlyName%
+
+[US2000_DESCRIPTION.AddReg]
+HKR,,Description,,%US2000.DeviceDesc%
+
+[HAXBAR_Interface]
+AddReg=HAXBAR_Interface.AddReg
+
+[HAXBAR_Interface.AddReg]
+HKR,,CLSID,,%CLSID_CrossbarFilter%
+HKR,,FriendlyName,,%XBARFriendlyName%
+
+;
+; Services installation
+;
+
+[US2000.Services]
+AddService = US2000,2,VID.ServiceInstall
+
+[US2000.NT.Services]
+AddService = US2000,2,VID.ServiceInstall
+
+[US2000.NTx86.Services]
+AddService = US2000,2,VID.ServiceInstall
+
+[US2000.NTamd64.Services]
+AddService = US2000,2,VID.ServiceInstall
+
+[VID.ServiceInstall]
+DisplayName   = %US2000.DeviceDesc%
+ServiceType   = 1
+StartType     = 3
+ErrorControl  = 1
+ServiceBinary = %10%\system32\drivers\us2000.sys
+
+;---------------------------------------------------------------
+;                S t r i n g s
+;---------------------------------------------------------------
+
+[Strings]
+
+;
+; Device Names
+;
+US2000.DeviceDesc          = "ZhongAn US2000 Video Capture Devicee"
+
+;
+; Friendly Names
+;
+VIDFriendlyName              = "ZhongAn US2000 Video Capture Device"
+XBARFriendlyName             = "ZhongAn US2000 Capture Crossbar"
+
+;
+; Reference GUIDS
+;
+KsNameFilter                 = "{9B365890-165F-11D0-A195-0020AFD156E4}"
+XBARReferenceGUID            = "{47B00748-34A2-4000-A892-BA2ABF2E2BE4}"
+
+;
+; Other Strings
+;
+
+CLSID_CrossbarFilter         = "{71F96460-78F3-11d0-A18C-00A0C9118956}"
+
+Proxy.CLSID                  = "{17CCA71B-ECD7-11D0-B908-00A0C9223196}"
+
+ActiveMovieCategories        = "CLSID\{da4e3da0-d07d-11d0-bd50-00a0c911ce86}\Instance"
+MediaCategories              = "SYSTEM\CurrentControlSet\Control\MediaCategories"
+MediaSets                    = "System\CurrentControlSet\Control\MediaSets"
+MediaInterfaces              = "System\CurrentControlSet\Control\MediaInterfaces"
+
+GUID.PinName_Capture         = "{FB6C4281-0353-11d1-905F-0000C0CC16BA}"

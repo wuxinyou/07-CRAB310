@@ -1,0 +1,5 @@
+-c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I.\Includes\App -I.\Includes\Protocol -I.\Includes\STM32_CMSIS -I.\Includes\STM32_Driver -I.\Includes\STM32F4_StdPeriph -I.\Includes\User -I.\Includes\DataTypeRealize -I.\Includes 
+-I "D:\Program Files\Keil\ARM\RV31\INC" 
+-I "D:\Program Files\Keil\ARM\CMSIS\Include" 
+-I "D:\Program Files\Keil\ARM\Inc\ST\STM32F4xx" 
+-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -o ".\OBJ\stm32f4_prioritycontrol.o" --omf_browse ".\OBJ\stm32f4_prioritycontrol.crf" --depend ".\OBJ\stm32f4_prioritycontrol.d" "source\STM32_Driver\STM32F4_PriorityControl.c"

@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: dlgDemo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"dlgDemo.res" /d "_DEBUG" /d "_AFXDLL" "E:\CYDL\01-全向机器人\CRAB\VcDemoMini02\dlgDemo.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC67.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/dlgDemo.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\CYDL\01-全向机器人\CRAB\VcDemoMini02\dlgDemoDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC67.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC68.tmp" with contents
+[
+DXMediaCap.lib /nologo /subsystem:windows /incremental:yes /pdb:"..\output\dlgDemo.pdb" /debug /machine:I386 /out:"../AppExe/VCDemo.exe" /pdbtype:sept 
+".\Debug\ChannelWnd.obj"
+".\Debug\CodecSettingFrm.obj"
+".\Debug\DeviceControl.obj"
+".\Debug\dlgDemo.obj"
+".\Debug\dlgDemoDlg.obj"
+".\Debug\StdAfx.obj"
+".\dlgDemo.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPC68.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+dlgDemoDlg.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+VCDemo.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

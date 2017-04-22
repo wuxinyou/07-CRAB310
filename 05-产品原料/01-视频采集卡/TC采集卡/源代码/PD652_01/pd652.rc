@@ -1,0 +1,321 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\pd652.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\logo.ico"
+IDI_ICON                ICON    DISCARDABLE     "res\\logo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_STREAMCATCHERDEMO_DIALOG DIALOGEX 0, 0, 313, 155
+STYLE WS_POPUP | WS_VISIBLE
+EXSTYLE WS_EX_APPWINDOW
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+END
+
+IDD_SETUP_DIALOG DIALOGEX 0, 0, 467, 176
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+FONT 10, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "INFO...",IDC_STATIC_DEVICE_FORMAT_INFOMATION,7,7,453,11,
+                    SS_CENTERIMAGE | WS_BORDER
+    PUSHBUTTON      " VIDEO INPUT +",IDC_BUTTON_VIDEO_INPUT,7,23,87,27,
+                    BS_LEFT,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "SNAPSHOT BMP +",IDC_BUTTON_SNAPSHOT_BMP,7,52,87,27,
+                    BS_LEFT,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "AUDIO INPUT +",IDC_BUTTON_AUDIO_INPUT,97,23,87,27,
+                    BS_LEFT,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "SNAPSHOT JPG +",IDC_BUTTON_SNAPSHOT_JPG,97,52,87,27,
+                    BS_LEFT,WS_EX_CLIENTEDGE
+    PUSHBUTTON      " START RECORD 1-1",IDC_BUTTON_RECORD_START_1_1,7,81,87,
+                    27,BS_LEFT,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "STOP RECORD 1-1",IDC_BUTTON_RECORD_STOP_1_1,97,81,87,27,
+                    BS_LEFT,WS_EX_CLIENTEDGE
+    PUSHBUTTON      " START RECORD 1-2",IDC_BUTTON_RECORD_START_1_2,7,111,87,
+                    27,BS_LEFT,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "STOP RECORD 1-2",IDC_BUTTON_RECORD_STOP_1_2,97,111,87,
+                    27,BS_LEFT,WS_EX_CLIENTEDGE
+    CONTROL         "AUTO DEINTERLACE",IDC_CHECK_AUTO_DEINTERLACE,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,277,24,84,12
+    PUSHBUTTON      "VIDEO QUALITY +",IDC_BUTTON_VIDEO_QUALITY,186,23,87,27,
+                    BS_LEFT,WS_EX_CLIENTEDGE
+    CONTROL         "INTEL GPU SUPPORT 1-1",IDC_CHECK_GPU_SUPPORT_1_1,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,186,82,93,12
+    CONTROL         "INTEL GPU SUPPORT 1-2",IDC_CHECK_GPU_SUPPORT_1_2,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,186,111,93,12
+    CONTROL         "AVI (H.264 + PCM)",IDC_AVI_1_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,286,83,74,10
+    CONTROL         "MP4 (H.264 + AAC)",IDC_MP4_1_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,366,83,75,10
+    CONTROL         "AVI (H.264 + PCM)",IDC_AVI_2_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,286,111,74,10
+    CONTROL         "MP4 (H.264 + AAC)",IDC_MP4_2_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,366,111,75,10
+    EDITTEXT        IDC_EDIT_BMP_PATH,185,52,275,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_JPG_PATH,185,67,275,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_RECORD_PATH_1_1,185,96,275,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_RECORD_PATH_1_2,185,126,275,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "SHOW CLONE VIDEO",IDC_CHECK_SHOW_CLONE_VIDEO,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,277,36,84,12
+    PUSHBUTTON      " START RECORD 1-3",IDC_BUTTON_RECORD_START_1_3,7,141,87,
+                    27,BS_LEFT,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "STOP RECORD 1-3",IDC_BUTTON_RECORD_STOP_1_3,97,141,87,
+                    27,BS_LEFT,WS_EX_CLIENTEDGE
+    CONTROL         "INTEL GPU SUPPORT 1-3",IDC_CHECK_GPU_SUPPORT_1_3,"Button",
+                    BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,186,141,93,12
+    CONTROL         "AVI (H.264 + PCM)",IDC_AVI_3_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,286,141,74,10
+    CONTROL         "MP4 (H.264 + AAC)",IDC_MP4_3_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,366,141,75,10
+    EDITTEXT        IDC_EDIT_RECORD_PATH_1_3,185,156,275,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+END
+
+IDD_AUDIO_INPUT_DIALOG DIALOG DISCARDABLE  0, 0, 99, 35
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "EMBEDDED AUDIO",IDC_RADIO_INPUT_EMBEDDED_AUDIO,"Button",
+                    BS_AUTORADIOBUTTON,7,7,85,8
+    CONTROL         "LINE-IN",IDC_RADIO_INPUT_LINEIN,"Button",
+                    BS_AUTORADIOBUTTON,7,20,85,8
+END
+
+IDD_VIDEO_INPUT_DIALOG DIALOG DISCARDABLE  0, 0, 119, 158
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "HDMI",IDC_RADIO_INPUT_HDMI,"Button",BS_AUTORADIOBUTTON,
+                    7,15,105,16
+    CONTROL         "DVI-D",IDC_RADIO_INPUT_DVID,"Button",BS_AUTORADIOBUTTON,
+                    7,30,105,16
+    CONTROL         "COMPONENTS ( YCBCR )",IDC_RADIO_INPUT_COMPONENTS,"Button",
+                    BS_AUTORADIOBUTTON,7,44,105,16
+    CONTROL         "DVI-A",IDC_RADIO_INPUT_DVIA,"Button",BS_AUTORADIOBUTTON,
+                    7,59,105,16
+    CONTROL         "SDI",IDC_RADIO_INPUT_SDI,"Button",BS_AUTORADIOBUTTON,7,
+                    73,105,16
+    CONTROL         "COMPOSITE",IDC_RADIO_INPUT_COMPOSITE,"Button",
+                    BS_AUTORADIOBUTTON,7,86,105,16
+    CONTROL         "SVIDEO",IDC_RADIO_INPUT_SVIDEO,"Button",
+                    BS_AUTORADIOBUTTON,7,102,105,16
+    CONTROL         "AUTO",IDC_RADIO_INPUT_AUTO,"Button",BS_AUTORADIOBUTTON,
+                    7,119,105,16
+END
+
+IDD_VIDEO_QUALITY_DIALOG DIALOG DISCARDABLE  0, 0, 207, 142
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 10, "MS Sans Serif"
+BEGIN
+    CONTROL         "Slider1",IDC_SLIDER_BRIGHTNESS,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,73,15,100,17
+    LTEXT           "",IDC_STATIC_BRIGHTNESS,173,13,24,17,SS_CENTERIMAGE
+    LTEXT           "BRIGHTNESS",IDC_STATIC,14,13,50,17,SS_CENTERIMAGE
+    CONTROL         "Slider1",IDC_SLIDER_CONSTRAST,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,73,35,100,17
+    LTEXT           "",IDC_STATIC_CONSTRAST,173,33,24,17,SS_CENTERIMAGE
+    LTEXT           "CONSTRAST",IDC_STATIC,14,33,50,17,SS_CENTERIMAGE
+    CONTROL         "Slider1",IDC_SLIDER_HUE,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,73,56,100,17
+    LTEXT           "",IDC_STATIC_HUE,173,54,24,17,SS_CENTERIMAGE
+    LTEXT           "HUE",IDC_STATIC,14,54,50,17,SS_CENTERIMAGE
+    CONTROL         "Slider1",IDC_SLIDER_SATURATION,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,73,74,100,17
+    LTEXT           "",IDC_STATIC_SATURATION,173,72,24,17,SS_CENTERIMAGE
+    LTEXT           "SATURATION",IDC_STATIC,14,72,50,17,SS_CENTERIMAGE
+    CONTROL         "Slider1",IDC_SLIDER_SHARPNESS,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,73,95,100,17
+    LTEXT           "",IDC_STATIC_SHARPNESS,173,93,24,17,SS_CENTERIMAGE
+    LTEXT           "SHARPNESS",IDC_STATIC,14,93,50,17,SS_CENTERIMAGE
+    PUSHBUTTON      "DEFAULT",IDC_BUTTON_DEFAULT,108,118,38,17
+    PUSHBUTTON      "OK",IDC_BUTTON_OK,162,118,38,17
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,116,5
+ PRODUCTVERSION 1,0,116,5
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "pd652 MFC Application\0"
+            VALUE "FileVersion", "1, 0, 116, 5\0"
+            VALUE "InternalName", "pd652\0"
+            VALUE "LegalCopyright", "Copyright (C) 2012.08.09, 1.1.0.116.5\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "pd652.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "pd652 Application\0"
+            VALUE "ProductVersion", "1, 0, 116, 5\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_SETUP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 460
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_AUDIO_INPUT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 92
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 28
+    END
+
+    IDD_VIDEO_INPUT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 112
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 151
+    END
+
+    IDD_VIDEO_QUALITY_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 135
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\pd652.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,39 @@
+------------------------------------------------------------
+Single Pin Net Report for 海关全向控制器主控板电路V4_主控芯片.SchDoc
+-- 2016/11/10
+-- 11:01:28
+------------------------------------------------------------
+   //2 joystick
+Net AD1 has only one pin (Pin U2-19)
+Net AD2 has only one pin (Pin U2-18)
+Net AD3 has only one pin (Pin U2-15)
+Net AD4 has only one pin (Pin U2-14)
+//CtrlBox power
+Net AD_POW has only one pin (Pin U2-11)
+same//  Power delay switch    
+Net AD_POWKEY has only one pin (Pin U2-10)
+     //blueTooth   ctrl power
+Net CTRBTPOW has only one pin (Pin U2-32)
+//sysytem ctrl power
+Net CTRPOW has only one pin (Pin U2-43)
+//videoCard ctrl power
+Net CTRVEDIOPOW has only one pin (Pin U2-42)
+  //8 key
+Net KEY1 has only one pin (Pin U2-31)
+Net KEY2 has only one pin (Pin U2-30)
+Net KEY3 has only one pin (Pin U2-28)
+Net KEY4 has only one pin (Pin U2-29)
+Net KEY5 has only one pin (Pin U2-41)
+Net KEY6 has only one pin (Pin U2-40)
+Net KEY7 has only one pin (Pin U2-39)
+Net KEY8 has only one pin (Pin U2-38)
+
+Net PADDET has only one pin (Pin U2-33)
+   //power led
+Net POWLED1 has only one pin (Pin U2-27)
+Net POWLED2 has only one pin (Pin U2-26)
+Net POWLED3 has only one pin (Pin U2-25)
+Net POWLED4 has only one pin (Pin U2-20)
+//  com to Pad
+Net TTL_RX3 has only one pin (Pin U2-22)
+Net TTL_TX3 has only one pin (Pin U2-21)

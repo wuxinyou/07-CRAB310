@@ -1,0 +1,5 @@
+-c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I.\Includes\App -I.\Includes\Protocol -I.\Includes\STM32_CMSIS -I.\Includes\STM32_Driver -I.\Includes\STM32F4_StdPeriph -I.\Includes\User -I.\Includes\DataTypeRealize -I.\Includes 
+-I C:\Keil\ARM\RV31\INC 
+-I C:\Keil\ARM\CMSIS\Include 
+-I C:\Keil\ARM\Inc\ST\STM32F4xx 
+-DUSE_STDPERIPH_DRIVER -DSTM32F4XX -o ".\OBJ\stm32f4_pwmout.o" --omf_browse ".\OBJ\stm32f4_pwmout.crf" --depend ".\OBJ\stm32f4_pwmout.d" "source\STM32_Driver\STM32F4_PwmOut.c"

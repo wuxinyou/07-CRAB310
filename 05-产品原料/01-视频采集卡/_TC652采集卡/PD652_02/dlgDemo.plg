@@ -1,0 +1,80 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: dlgDemo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3B4.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"../Debug/" /Fp"../Debug/dlgDemo.pch" /Yu"stdafx.h" /Fo"../Debug/" /Fd"../Debug/" /FD /GZ /c 
+"E:\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\PD652_02\dlgDemoDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3B4.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3B5.tmp" with contents
+[
+winmm.lib lib/libvlc.lib lib/libvlccore.lib opengl32.lib glu32.lib glaux.lib dinput8.lib dxguid.lib QCAP.lib /nologo /subsystem:windows /incremental:yes /pdb:"..\output\dlgDemo.pdb" /debug /machine:I386 /out:"../AppExe/CRAB.exe" /pdbtype:sept 
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\3DS.OBJ"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\3DSShow.obj"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\BCMenu.obj"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\BtnST.obj"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\ChannelWindow.obj"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\ChannelWnd.obj"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\CodecSettingFrm.obj"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\Compass.obj"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\cyQueue.obj"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\DeviceControl.obj"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\dlgDemo.obj"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\dlgDemoDlg.obj"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\MyProgress.obj"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\MySplashScreen.obj"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\PictureEx.obj"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\PicViewerDlg.obj"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\SerialPort.obj"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\StaticBtn.obj"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\StdAfx.obj"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\TxtViewerDlg.obj"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\VideoPlayerDlg.obj"
+".\dlgDemo.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3B5.tmp"
+<h3>Output Window</h3>
+Compiling...
+dlgDemoDlg.cpp
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3B7.tmp" with contents
+[
+/nologo /o"../Debug/dlgDemo.bsc" 
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\StdAfx.sbr"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\3DS.SBR"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\3DSShow.sbr"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\BCMenu.sbr"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\BtnST.sbr"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\ChannelWindow.sbr"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\ChannelWnd.sbr"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\CodecSettingFrm.sbr"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\Compass.sbr"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\cyQueue.sbr"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\DeviceControl.sbr"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\dlgDemo.sbr"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\dlgDemoDlg.sbr"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\MyProgress.sbr"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\MySplashScreen.sbr"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\PictureEx.sbr"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\PicViewerDlg.sbr"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\SerialPort.sbr"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\StaticBtn.sbr"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\TxtViewerDlg.sbr"
+"\CYDL\01-全向机器人\05-Pad软件\TC652采集卡\Debug\VideoPlayerDlg.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3B7.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+CRAB.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

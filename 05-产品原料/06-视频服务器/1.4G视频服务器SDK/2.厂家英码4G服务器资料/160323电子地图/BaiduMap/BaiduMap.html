@@ -1,0 +1,206 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>  
+<head>  
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />  
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />  
+	<title>BaiduMap</title>  
+	<style type="text/css">
+		body, html,#container {width: 100%;height: 100%;overflow: hidden;margin:0;font-family: 微软雅黑;}
+		#filter {width: 100%;height: 100%;overflow: hidden;margin:0; position:absolute; z-index:1; background: #ffffff;}
+		#loadingdiv {width: 100%;height: 100%;overflow: hidden;margin:0; position:absolute; z-index:2;}
+		#load {width: 250px; height: 80px; margin:0 auto; padding: 0; top: 40%; position:relative; text-align:center;
+				background: #ecfcff; border-style: solid; border-width: 1px;}
+		#loadimg { float: left; margin: 25px 8px 0 13px; }
+		#loadtxt { float: left; margin-top: 33px; text-align:center;  font-style:bold; font-family: 微软雅黑,serif;}
+	</style>	
+	<!-- 全局变量 -->
+	
+	<link rel="stylesheet" type="text/css" href="TrafficControl_min.css" />
+	
+</head>  
+		<!--
+		html{height:100%}  
+		body{height:100%;margin:0px;padding:0px}  
+		#container{height:100%} 
+		-->
+<body>
+	<div id="loadingdiv">
+		<div id="load">
+			<div id="loadimg"><img src="loadingcycle.gif"></div>
+			<div id="loadtxt"><p>地图加载中，请耐心等待</p></div>
+		</div>
+	</div>
+	<div id="filter"></div>
+	<div id="container"></div>
+</body>  
+</html>  
+	<script type="text/javascript" src="Config.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=1.5&ak=F99ad240910774232a9a3390a642fca9&services=true"></script>
+	<script type="text/javascript" src="Map.js"></script>
+	<script type="text/javascript" src="Exception.js"></script>
+	<script type="text/javascript" src="TrafficControl_min.js"></script>
+	
+	<!-- 定义地图 -->
+	<script type="text/javascript"> 
+		var map = new BMap.Map("container");								// 创建地图实例
+
+	</script>
+	
+	<!-- 地图操作与设置函数 -->
+	<script type="text/javascript">
+		/**
+		 *	定位地图的中心(移动地图)
+		 *	pointx : 中心的x坐标 
+		 *	pointy : 中心的y坐标
+		 **/
+		function pointTo(pointx, pointy) {
+			var point = new BMap.Point(pointx, pointy);
+			map.panto(point);
+		}
+		
+		function setZoom(zoom){
+			map.setZoom(zoom);
+		}
+
+		/**
+		 *	动态定义Label标签显示的最小缩放大小
+		 **/
+		function setLabelLimitShownZoom(zoomout) {
+			DEFAULT_LABEL_LIMITSHOWNZOOM = zoomout;
+		}
+	</script>
+
+	<!-- 地图控件函数 -->
+	<script type="text/javascript">
+		var navigationControl;
+		var scaleControl;
+		var overviewMapControl;
+		var mapTypeControl;
+		var trafficControl;
+		function activeNavigationControl(flag) {		// 添加或删除地图平移缩放控件
+			(navigationControl == null)?(navigationControl = new BMap.NavigationControl()):null;
+			(flag)?map.addControl(navigationControl):map.removeControl(navigationControl);
+		}
+		function activeScaleControl(flag) {				// 添加或删除比例尺控件
+			(scaleControl == null)?(scaleControl = new BMap.ScaleControl()):null;
+			(flag)?map.addControl(scaleControl):map.removeControl(scaleControl);
+		}
+		function activeOverviewMapControl(flag) {		// 添加或删除缩略图控件
+			(overviewMapControl == null)?(overviewMapControl = new BMap.OverviewMapControl()):null;
+			(flag)?map.addControl(overviewMapControl):map.removeControl(overviewMapControl);
+		}
+		function activeMapTypeControl(flag) {			// 添加或删除地图类型控件
+			(mapTypeControl == null)?(mapTypeControl = new BMap.MapTypeControl({mapTypes: [BMAP_NORMAL_MAP,BMAP_SATELLITE_MAP,BMAP_HYBRID_MAP]})):null;
+			(flag)?map.addControl(mapTypeControl):map.removeControl(mapTypeControl);
+		}
+		function activeTrafficControl(flag) {
+			(trafficControl == null)?(trafficControl = new BMapLib.TrafficControl({ showPanel: true })):null;
+			trafficControl.setAnchor(BMAP_ANCHOR_TOP_RIGHT);
+			trafficControl.setOffset(new BMap.Size(10, 55));
+			(flag)?map.addControl(trafficControl):map.removeControl(trafficControl);
+		}
+	</script>
+
+	<!-- 地图事件函数 -->
+	<script type="text/javascript">
+
+		function finishloading()
+		{
+			document.getElementById("loadingdiv").style.display="none";
+			document.getElementById("filter").style.display="none";
+			window.external.baiduMapLoaded();
+		}
+
+		/**
+		 *	当地图缩放一定程度时,label标签是否显示
+		 **/
+		function labelWhenZoomEnd(e){
+			if (map.getZoom() < DEFAULT_LABEL_LIMITSHOWNZOOM) {
+				hiddenAllMarkerLabel();
+			} else {
+				showAllMarkerLabel();
+			}
+			return true;
+		}
+		
+		/**
+		 *	当地图初始化后初始化控件以及回调
+		 **/
+		var mInfoWindow;
+		function mapLoaded(type, target, pixel, point, zoom) {
+			map.enableScrollWheelZoom();										// 启用滚轮缩放大小	
+			map.enableContinuousZoom();
+			// 初始化控件
+			DEFAULT_ACTIVE_NAVIGATIONCONTROL?activeNavigationControl(true):null;
+			DEFAULT_ACTIVE_SCALECONTROL?activeScaleControl(true):null;
+			DEFAULT_ACTIVE_OVERVIEWMAPCONTROL?activeOverviewMapControl(true):null;
+			DEFAULT_ACTIVE_MAPTYPECONTROL?activeMapTypeControl(true):null;
+			DEFAULT_ACTIVE_TRAFFICCONTROL?activeTrafficControl(true):null;
+
+			//样式3
+			/*mInfoWindow = new BMapLib.SearchInfoWindow(map, "信息框3内容", {
+				title: "信息框3", //标题
+				width: DEFAULT_INFOWINDOW_WIDTH, //宽度
+				height: DEFAULT_INFOWINDOW_HEIGHT, //高度
+				panel : "panel", //检索结果面板
+				enableAutoPan : true, //自动平移
+				searchTypes :[
+				]
+			});*/
+			
+			// 初始化InfoWindow
+			mInfoWindow = new BMap.InfoWindow("", {
+										width : DEFAULT_INFOWINDOW_WIDTH,
+										height : DEFAULT_INFOWINDOW_HEIGHT,
+										enableMessage : false
+										});
+			mInfoWindow2 = new BMap.InfoWindow("", {
+										width : DEFAULT_INFOWINDOW_WIDTH,
+										height : DEFAULT_INFOWINDOW_HEIGHT,
+										enableMessage : false
+										});
+			if(DEFAULT_MAP_GETLOCATEFORMIP != 1) {
+				setTimeout(finishloading,2000);
+			}
+		}
+		map.addEventListener("load", mapLoaded);
+		map.addEventListener("zoomend", labelWhenZoomEnd);			
+		map.addEventListener("click", function (e) { 
+			window.external.JsSelectPoint(e.point.lng,e.point.lat); 
+     });
+
+	</script>
+	
+	<!-- 地图基本覆盖物 -->
+	<script type="text/javascript" src="Overlays.js"></script>
+	<script type="text/javascript" src="PolyLine.js"></script>
+	<!-- 地图标记函数 -->
+	<script type="text/javascript" src="Marker.js"></script>
+	<!-- 地图初始化 -->
+	<script type="text/javascript">
+
+		function toCity(result)												// IP获得城市回调
+		{
+			map.setCenter(result.name);
+			map.setZoom(DEFAULT_MAP_ZOOM);
+			setTimeout(finishloading,1000);
+		}
+
+		// 初始化地图
+		if (DEFAULT_MAP_GETLOCATEFORMIP == 1)								// 用IP定位城市
+		{
+			map.centerAndZoom(new BMap.Point(105, 34.5), 5);
+			var myCity = new BMap.LocalCity();
+			myCity.get(toCity);
+		} else {
+			var point = new BMap.Point(DEFAULT_MAP_POINTX, DEFAULT_MAP_POINTY);	// 创建点坐标
+			map.centerAndZoom(point,DEFAULT_MAP_ZOOM);							// 初始化地图,设置中心点坐标和地图级别。
+		}
+		
+	</script>
+	<script type="text/javascript">
+		function test()
+		{
+			alert("invoke");
+		}
+	</script>

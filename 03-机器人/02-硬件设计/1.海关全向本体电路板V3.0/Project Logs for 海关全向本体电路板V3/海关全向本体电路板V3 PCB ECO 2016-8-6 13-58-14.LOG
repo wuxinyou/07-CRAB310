@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=GND_P Pin=D13-1
+Removed Pin From Net: NetName=12V Pin=D13-2
+Removed Member From Class: ClassName=海关全向本体电路板V3_电源管理 Member=D13
+Added Member To Class: ClassName=海关全向本体电路板V3_通信隔离 Member=Component U2 ISO7241CDWR
+Added Member To Class: ClassName=海关全向本体电路板V3_电源管理 Member=Component U4 HZD20D-24S12W

@@ -1,0 +1,39 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: dlgDemo - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"dlgDemo.res" /d "_DEBUG" "E:\CYDL\01-全向机器人\CRAB\VcDemoMini25\dlgDemo.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP200.tmp" with contents
+[
+winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"..\output\dlgDemo.pdb" /debug /machine:I386 /out:"../AppExe/CRAB.exe" /pdbtype:sept 
+".\Debug\BCMenu.obj"
+".\Debug\BtnST.obj"
+".\Debug\ChannelWnd.obj"
+".\Debug\CodecSettingFrm.obj"
+".\Debug\cyQueue.obj"
+".\Debug\DeviceControl.obj"
+".\Debug\dlgDemo.obj"
+".\Debug\dlgDemoDlg.obj"
+".\Debug\MyProgress.obj"
+".\Debug\PictureEx.obj"
+".\Debug\SerialPort.obj"
+".\Debug\StdAfx.obj"
+".\dlgDemo.res"
+".\Debug\TxtViewerDlg.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP200.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+CRAB.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,66 @@
+;------------------------------------------------------------------------------
+; 广州汇承信息科技通信设备类驱动程序 (CDC) INF 文件
+; (C)2012 版权所有广州汇承信息科技有限公司
+;------------------------------------------------------------------------------
+
+[Version]
+Signature="$Windows NT$"
+Class=Ports
+ClassGuid={4D36E978-E325-11CE-BFC1-08002BE10318}
+Provider=%PRVDR%
+CatalogFile=hccdc.cat
+DriverVer=09/26/2012,1.0.0
+
+[SourceDisksNames]
+1=%DriversDisk%,,,
+
+[SourceDisksFiles]
+
+
+[Manufacturer]
+%MFGNAME%=DeviceList,NT,NTamd64
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+;------------------------------------------------------------------------------
+;            VID/PID Settings
+;------------------------------------------------------------------------------
+[DeviceList.NT]
+%DESCRIPTION%=DriverInstall,USB\VID_0482&PID_5740
+
+[DeviceList.NTamd64]
+%DESCRIPTION%=DriverInstall,USB\VID_0482&PID_5740
+
+[DriverInstall.NT]
+Include=1,mdmcpq.inf
+CopyFiles=FakeModemCopyFileSection
+AddReg=DriverInstall.NT.AddReg
+
+[DriverInstall.NT.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,usbser.sys
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider"
+
+[DriverInstall.NT.Services]
+AddService=usbser, 0x00000002, DriverServiceInst
+
+[DriverServiceInst]
+DisplayName=%SERVICE%
+ServiceType = 1 ; SERVICE_KERNEL_DRIVER
+StartType = 3 ; SERVICE_DEMAND_START
+ErrorControl = 1 ; SERVICE_ERROR_NORMAL
+ServiceBinary= %12%\usbser.sys
+LoadOrderGroup = Base
+
+
+;------------------------------------------------------------------------------
+;              String Definitions
+;------------------------------------------------------------------------------
+;STMicroelectronics
+[Strings]
+PRVDR = "广州汇承信息科技有限公司"
+MFGNAME = "广州汇承信息科技有限公司."
+DESCRIPTION = "HC-USB Virtual COM Port"
+SERVICE = "HC Virtual COM Port"
+DriversDisk = "HC Drivers Disk" 
